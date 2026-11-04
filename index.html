@@ -45,6 +45,16 @@
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Slow camera drift on two photos only */
+.hero picture{display:block;overflow:hidden}
+.drift button{overflow:hidden}
+@media (prefers-reduced-motion:no-preference){
+  .hero picture img{animation:push 26s ease-in-out infinite alternate;transform-origin:52% 62%}
+  .drift img{animation:pan 22s ease-in-out infinite alternate;transform-origin:68% 50%;animation-play-state:paused}
+  .drift.on img{animation-play-state:running}
+}
+@keyframes push{from{transform:scale(1)}to{transform:scale(1.07)}}
+@keyframes pan{from{transform:scale(1.06) translateX(1.5%)}to{transform:scale(1.10) translateX(-1.5%)}}
 body{margin:0;background:var(--porcelain);color:var(--text);font:400 19px/1.6 var(--serif);font-variation-settings:"opsz" 16}
 html[data-lang=zh] body{font-family:var(--zh-sans);font-size:17px;line-height:1.8}
 html[data-lang=en] .zh,html[data-lang=zh] .en{display:none!important}
@@ -286,7 +296,7 @@ dialog.lb::backdrop{background:#101318}
       <a href="#outside"><span class="en">Outside</span><span class="zh">户外</span></a>
       <a href="#inside"><span class="en">Inside</span><span class="zh">室内</span></a>
       <a href="#plans"><span class="en">Plans</span><span class="zh">平面图</span></a>
-      <a href="#book"><span class="en">Book</span><span class="zh">预约</span></a>
+      <a href="#book"><span class="en">Contact</span><span class="zh">联系</span></a>
     </nav>
     <div class="lang" role="group" aria-label="Language 语言">
       <button type="button" data-set="en" aria-pressed="true">EN</button>
@@ -307,7 +317,7 @@ dialog.lb::backdrop{background:#101318}
       <p class="note"><span class="en">City views from four rooms. Off market, and shown privately to Emily Xiong's buyers first.</span><span class="zh">四个房间均可眺望城市景观。非公开发售，仅向 Emily Xiong 的买家私下优先展示。</span></p>
     </div>
     <div class="cta">
-      <a class="btn" href="#book"><span class="en">Book a private inspection</span><span class="zh">预约私人看房</span></a>
+      <a class="btn" href="#book"><span class="en">Contact Emily to arrange an inspection</span><span class="zh">联系 Emily 预约看房</span></a>
       <a class="call" href="tel:0401056588"><span class="en">Call Emily on 0401 056 588</span><span class="zh">致电 Emily：0401 056 588</span></a>
     </div>
   </div>
@@ -335,7 +345,7 @@ dialog.lb::backdrop{background:#101318}
         <p><span class="en">The master suite, the upstairs living room, the void over the stairs and the fourth bedroom all look across the treetops to the CBD, about 8 km north. At sunset the towers turn gold, then light up.</span><span class="zh">主卧套房、二楼起居室、楼梯上方的挑空空间以及第四间卧室，都能越过树梢望见北面约 8 公里外的布里斯班市中心。日落时高楼被染成金色，随后万家灯火渐次亮起。</span></p>
       </div>
     </div>
-    <div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="0" aria-label="The Brisbane CBD skyline at sunset, seen from the house"><img src="img/29-1200.webp" srcset="img/29-1200.webp 1200w, img/29-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="The Brisbane CBD skyline at sunset, seen from the house" style="background-image:url(data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoUAA0APu1kqk4ppaQiMAgBMB2JQBYdhDwyla6qutsHBC5wAP7fuCyN6OOgVBwUgwiEauPO7Yl0COrj4a2UaTIvCGoHuC8G85PcVFN+sXSQoR1IEcxG4mwAAAA=)"></button><figcaption><span class="en">The skyline at sunset, from the house</span><span class="zh">从家中看到的日落城市天际线</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="1" aria-label="The master bedroom at dusk with sliding doors to the balcony and the city beyond"><img src="img/27-1200.webp" srcset="img/27-1200.webp 1200w, img/27-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="The master bedroom at dusk with sliding doors to the balcony and the city beyond" style="background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABwBACdASoUAA0APu1iqk2ppaQiMAgBMB2JYwCdMoGv/gOqYX3LHCkj+zEkYAD8vFurf2zPzQ5S6IUW2+2ELb69tNmHiaQsPWkrdT5iI8jPlas3JodcxcEQYNNwD9tGf1p8wCM9JAZob3cXh9eXtolFtF8/bQiMZdEYwxoA)"></button><figcaption><span class="en">Master suite at dusk, with the balcony beyond</span><span class="zh">黄昏时的主卧套房，门外即是阳台</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="2" aria-label="Master suite sitting area by day, with doors open to the balcony and the city on the horizon"><img src="img/13-1200.webp" srcset="img/13-1200.webp 1200w, img/13-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Master suite sitting area by day, with doors open to the balcony and the city on the horizon" style="background-image:url(data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCdMoACjSdp5uI3vlIAAP3hEkt8lyZmzWcgqJ06D1voGbUgZaALDGG2yTvNuhuyJfAkDjPKI8jzk51GlsXiAsMnM972EivhVrvKMJRn6j2OUH/DooN6jSWEBlMgndoD7OlUaixdXwAA)"></button><figcaption><span class="en">Master suite by day, doors open to the balcony</span><span class="zh">白天的主卧套房，推拉门通往阳台</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="3" aria-label="Ensuite double vanity, with the city visible through the bedroom"><img src="img/12-1200.webp" srcset="img/12-1200.webp 1200w, img/12-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Ensuite double vanity, with the city visible through the bedroom" style="background-image:url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOmUABQshzqY90c2DIAAP7e73nZQ+MBTedWYMYIoU5YRQ8nl4t2d5dhHHpAvArC1opGsbu7OFT/N9rby5wXeRIBhvNsqU5lbYar3krV5rWoAAA=)"></button><figcaption><span class="en">Ensuite vanity, with the city through the bedroom</span><span class="zh">主卧浴室双台盆，透过卧室可见城市景观</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="4" aria-label="Aerial photo of Tarragindi at sunset with the Brisbane CBD on the horizon"><img src="img/22-1200.webp" srcset="img/22-1200.webp 1200w, img/22-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="Aerial photo of Tarragindi at sunset with the Brisbane CBD on the horizon" style="background-image:url(data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoUAA0APu1iqk2ppaQiMAgBMB2JYwCdEf/gPITkd4NiBbG0WsAA/sYGHfXBszW7gapz35tT9G7v/5RaqLEYeosf63bCLXDcFGQO65OsbC3B3/kIY9vBl8BwQBgIDqAA)"></button><figcaption><span class="en">Tarragindi at sunset, the CBD on the horizon</span><span class="zh">日落时分的塔拉金迪，远处即是市中心</span></figcaption></figure></div>
+    <div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="0" aria-label="The Brisbane CBD skyline at sunset, seen from the house"><img src="img/29-1200.webp" srcset="img/29-1200.webp 1200w, img/29-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="The Brisbane CBD skyline at sunset, seen from the house" style="background-image:url(data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoUAA0APu1kqk4ppaQiMAgBMB2JQBYdhDwyla6qutsHBC5wAP7fuCyN6OOgVBwUgwiEauPO7Yl0COrj4a2UaTIvCGoHuC8G85PcVFN+sXSQoR1IEcxG4mwAAAA=)"></button><figcaption><span class="en">The skyline at sunset, from the house</span><span class="zh">从家中看到的日落城市天际线</span></figcaption></figure></div><div class="row"><figure class="ph drift" style="--r:1.5000"><button type="button" data-i="1" aria-label="The master bedroom at dusk with sliding doors to the balcony and the city beyond"><img src="img/27-1200.webp" srcset="img/27-1200.webp 1200w, img/27-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="The master bedroom at dusk with sliding doors to the balcony and the city beyond" style="background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABwBACdASoUAA0APu1iqk2ppaQiMAgBMB2JYwCdMoGv/gOqYX3LHCkj+zEkYAD8vFurf2zPzQ5S6IUW2+2ELb69tNmHiaQsPWkrdT5iI8jPlas3JodcxcEQYNNwD9tGf1p8wCM9JAZob3cXh9eXtolFtF8/bQiMZdEYwxoA)"></button><figcaption><span class="en">Master suite at dusk, with the balcony beyond</span><span class="zh">黄昏时的主卧套房，门外即是阳台</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="2" aria-label="Master suite sitting area by day, with doors open to the balcony and the city on the horizon"><img src="img/13-1200.webp" srcset="img/13-1200.webp 1200w, img/13-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Master suite sitting area by day, with doors open to the balcony and the city on the horizon" style="background-image:url(data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCdMoACjSdp5uI3vlIAAP3hEkt8lyZmzWcgqJ06D1voGbUgZaALDGG2yTvNuhuyJfAkDjPKI8jzk51GlsXiAsMnM972EivhVrvKMJRn6j2OUH/DooN6jSWEBlMgndoD7OlUaixdXwAA)"></button><figcaption><span class="en">Master suite by day, doors open to the balcony</span><span class="zh">白天的主卧套房，推拉门通往阳台</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="3" aria-label="Ensuite double vanity, with the city visible through the bedroom"><img src="img/12-1200.webp" srcset="img/12-1200.webp 1200w, img/12-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Ensuite double vanity, with the city visible through the bedroom" style="background-image:url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOmUABQshzqY90c2DIAAP7e73nZQ+MBTedWYMYIoU5YRQ8nl4t2d5dhHHpAvArC1opGsbu7OFT/N9rby5wXeRIBhvNsqU5lbYar3krV5rWoAAA=)"></button><figcaption><span class="en">Ensuite vanity, with the city through the bedroom</span><span class="zh">主卧浴室双台盆，透过卧室可见城市景观</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="4" aria-label="Aerial photo of Tarragindi at sunset with the Brisbane CBD on the horizon"><img src="img/22-1200.webp" srcset="img/22-1200.webp 1200w, img/22-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="Aerial photo of Tarragindi at sunset with the Brisbane CBD on the horizon" style="background-image:url(data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoUAA0APu1iqk2ppaQiMAgBMB2JYwCdEf/gPITkd4NiBbG0WsAA/sYGHfXBszW7gapz35tT9G7v/5RaqLEYeosf63bCLXDcFGQO65OsbC3B3/kIY9vBl8BwQBgIDqAA)"></button><figcaption><span class="en">Tarragindi at sunset, the CBD on the horizon</span><span class="zh">日落时分的塔拉金迪，远处即是市中心</span></figcaption></figure></div>
   </div>
 </section>
 
@@ -477,7 +487,7 @@ dialog.lb::backdrop{background:#101318}
   <div class="wrap">
     <div class="book-grid">
       <div>
-        <h2 id="book-h"><span class="en">Book a private inspection</span><span class="zh">预约私人看房</span></h2>
+        <h2 id="book-h"><span class="en">Contact Emily to arrange an inspection</span><span class="zh">联系 Emily，预约看房</span></h2>
         <p style="margin-top:18px"><span class="en">This house is off market and shown only to Emily's buyers. Leave your details and she'll be in touch to arrange a time that suits you.</span><span class="zh">本房产不公开上市，仅向 Emily 的买家展示。留下您的联系方式，她会尽快与您联系，安排您方便的看房时间。</span></p>
         <p><span class="en">Private sale. Ask Emily for the price guide.</span><span class="zh">私人洽售，价格请向 Emily 咨询。</span></p>
         <div class="agent">
@@ -514,7 +524,7 @@ dialog.lb::backdrop{background:#101318}
             <p class="hint"><span class="en">Questions, or times that suit you to inspect.</span><span class="zh">您的问题，或方便看房的时间。</span></p>
           </div>
           <div>
-            <button class="btn" type="submit"><span class="en">Book a private inspection</span><span class="zh">预约私人看房</span></button>
+            <button class="btn" type="submit"><span class="en">Send to Emily</span><span class="zh">发送给 Emily</span></button>
             <p class="hint"><span class="en">Your details go straight to Emily and nowhere else.</span><span class="zh">您的信息将直接发送给 Emily，不会用于其他用途。</span></p>
             <p class="err" id="send-err"><span class="en">That didn't send. Check your connection and try again, or call Emily on 0401 056 588.</span><span class="zh">发送失败。请检查网络后重试，或直接致电 Emily：0401 056 588。</span></p>
           </div>
@@ -532,7 +542,7 @@ dialog.lb::backdrop{background:#101318}
 
 
 <div class="bar">
-  <a class="btn" id="sms" href="sms:0401056588?&body=Hi%20Emily%2C%20I%27d%20like%20to%20book%20a%20private%20inspection%20of%2024%20Weal%20Ave%2C%20Tarragindi.%20My%20name%20is%20"><span class="en">Text Emily to book</span><span class="zh">短信联系 Emily 预约</span></a>
+  <a class="btn" id="sms" href="sms:0401056588?&body=Hi%20Emily%2C%20I%27d%20like%20to%20arrange%20an%20inspection%20of%2024%20Weal%20Ave%2C%20Tarragindi.%20My%20name%20is%20"><span class="en">Contact Emily to inspect</span><span class="zh">联系 Emily 预约看房</span></a>
   <a class="alt" href="tel:0401056588"><span class="en">Call</span><span class="zh">致电</span></a>
 </div>
 
@@ -552,7 +562,7 @@ dialog.lb::backdrop{background:#101318}
 <script>
 (function(){
   var root=document.documentElement;
-  var smsBody={en:"Hi Emily, I'd like to book a private inspection of 24 Weal Ave, Tarragindi. My name is ",zh:"您好 Emily，我想预约私人看房：24 Weal Ave, Tarragindi。我的名字是："};
+  var smsBody={en:"Hi Emily, I'd like to arrange an inspection of 24 Weal Ave, Tarragindi. My name is ",zh:"您好 Emily，我想预约私人看房：24 Weal Ave, Tarragindi。我的名字是："};
   function setLang(l){
     root.dataset.lang=l;root.lang=l==='zh'?'zh-Hans':'en-AU';
     document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l);});
@@ -569,6 +579,7 @@ dialog.lb::backdrop{background:#101318}
   var set=items,i=0,opener=null;
   function show(n){i=(n+set.length)%set.length;im.src=set[i].src;var c=set[i].cap[root.dataset.lang==='zh'?1:0];im.alt=c;cap.textContent=c;cnt.textContent=(i+1)+' / '+set.length;}
   function open(list,n,btn){set=list;opener=btn;lb.classList.toggle('plan',list===plans);show(n);if(lb.showModal)lb.showModal();else lb.setAttribute('open','');}
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('on',e.isIntersecting);});});document.querySelectorAll('.drift').forEach(function(d){io.observe(d);});}
   document.querySelectorAll('.ph button').forEach(function(b){b.addEventListener('click',function(){open(items,+b.dataset.i,b);});});
   document.querySelectorAll('[data-plan]').forEach(function(b){b.addEventListener('click',function(){open(plans,+b.dataset.plan,b);});});
   document.getElementById('lb-prev').onclick=function(){show(i-1);};
