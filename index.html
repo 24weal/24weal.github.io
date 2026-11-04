@@ -197,6 +197,9 @@ form{display:grid;gap:22px;font-family:var(--sans)}
 html[data-lang=zh] form{font-family:var(--zh-sans)}
 label,.legend{display:block;font-weight:500;margin-bottom:8px;color:var(--on-ink);font-size:16px}
 label small,.legend small{font-weight:400;color:var(--on-ink-muted)}
+textarea{width:100%;padding:12px 14px;border:1px solid #4f566b;border-radius:2px;background:var(--ink-2);color:#fff;font:400 17px/1.5 var(--sans);resize:vertical}
+textarea:focus-visible{outline:2px solid #fff;outline-offset:1px}
+#send-err.show{display:block}
 input[type=text],input[type=tel],input[type=email]{width:100%;min-height:52px;padding:0 14px;border:1px solid #4f566b;border-radius:2px;background:var(--ink-2);color:#fff;font:400 17px var(--sans)}
 input:focus-visible{outline:2px solid #fff;outline-offset:1px}
 .hint{font-size:14px;color:var(--on-ink-muted);margin:6px 0 0}
@@ -505,14 +508,20 @@ dialog.lb::backdrop{background:#101318}
             <input type="email" id="email" name="email" autocomplete="email" required>
             <p class="err"><span class="en">Add an email address so Emily can send you the details.</span><span class="zh">请填写电子邮箱，方便 Emily 发送房屋资料。</span></p>
           </div>
+          <div class="field">
+            <label for="message"><span class="en">Message</span><span class="zh">留言</span> <small><span class="en">optional</span><span class="zh">选填</span></small></label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <p class="hint"><span class="en">Questions, or times that suit you to inspect.</span><span class="zh">您的问题，或方便看房的时间。</span></p>
+          </div>
           <div>
             <button class="btn" type="submit"><span class="en">Book a private inspection</span><span class="zh">预约私人看房</span></button>
-            <p class="hint"><span class="en">This opens your email app with the request to Emily filled in. Press send to book.</span><span class="zh">点击后将打开您的邮件应用，内容已自动填好，发送即可完成预约。</span></p>
+            <p class="hint"><span class="en">Your details go straight to Emily and nowhere else.</span><span class="zh">您的信息将直接发送给 Emily，不会用于其他用途。</span></p>
+            <p class="err" id="send-err"><span class="en">That didn't send. Check your connection and try again, or call Emily on 0401 056 588.</span><span class="zh">发送失败。请检查网络后重试，或直接致电 Emily：0401 056 588。</span></p>
           </div>
         </form>
         <div class="sent" id="sent" role="status" tabindex="-1">
-          <h3><span class="en">Your request is ready to send</span><span class="zh">预约邮件已准备好</span></h3>
-          <p><span class="en">Press send in your email app and Emily will text you to confirm a time. If nothing opened, call or text her on <a href="tel:0401056588">0401 056 588</a>.</span><span class="zh">请在邮件应用中点击发送，Emily 会发短信与您确认时间。如果邮件应用没有打开，请直接致电或短信 <a href="tel:0401056588">0401 056 588</a>。</span></p>
+          <h3><span class="en">Sent to Emily</span><span class="zh">已发送给 Emily</span></h3>
+          <p><span class="en">Thanks. Emily will be in touch to arrange a time. If it's urgent, call or text her on <a href="tel:0401056588">0401 056 588</a>.</span><span class="zh">谢谢！Emily 会尽快与您联系安排看房时间。如有急事，请直接致电或短信 <a href="tel:0401056588">0401 056 588</a>。</span></p>
         </div>
       </div>
     </div>
@@ -585,9 +594,14 @@ dialog.lb::backdrop{background:#101318}
     document.getElementById('f-email').classList.toggle('invalid',!emOk);
     if(!name){form.name.focus();ok=false;}else if(!mobOk){form.mobile.focus();ok=false;}else if(!emOk){form.email.focus();ok=false;}
     if(!ok)return;
-        var body='Hi Emily,\n\nI\'d like to book a private inspection of 24 Weal Avenue, Tarragindi.\n\nName: '+name+'\nMobile: '+mob+'\nEmail: '+em+(root.dataset.lang==='zh'?'\nPreferred language: Chinese':'')+'\n\nThanks';
-    location.href='mailto:EmilyXiong@ljhpp.com.au?subject='+encodeURIComponent('Private inspection, 24 Weal Avenue')+'&body='+encodeURIComponent(body);
-    form.style.display='none';var s=document.getElementById('sent');s.style.display='block';s.focus();
+        var msg=form.message.value.trim(),zh=root.dataset.lang==='zh',btn=form.querySelector('button[type=submit]'),err=document.getElementById('send-err');
+    err.classList.remove('show');btn.disabled=true;btn.style.opacity=.6;
+    fetch('https://formsubmit.co/ajax/EmilyXiong@ljhpp.com.au',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({_subject:'Private inspection request: 24 Weal Avenue, Tarragindi',_template:'table',_replyto:em,
+        Name:name,Mobile:mob,Email:em,Message:msg||'(none)',Language:zh?'Chinese':'English',Property:'24 Weal Avenue, Tarragindi'})})
+    .then(function(r){return r.json().then(function(j){if(!r.ok||String(j.success)==='false')throw 0;});})
+    .then(function(){form.style.display='none';var s=document.getElementById('sent');s.style.display='block';s.focus();})
+    .catch(function(){err.classList.add('show');btn.disabled=false;btn.style.opacity=1;});
   });
 })();
 </script>
