@@ -1,411 +1,429 @@
 <!doctype html>
-<html lang="en-AU">
+<html lang="en-AU" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>24 Weal Avenue, Tarragindi</title>
-<meta name="description" content="A new five-bedroom home in Tarragindi with a pool and the Brisbane skyline from four rooms. Private inspections with Emily Xiong.">
+<meta name="description" content="24 Weal Avenue, Tarragindi. New five-bedroom home with city views, offered off market through Emily Xiong, LJ Hooker Property Partners.">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:title" content="24 Weal Avenue, Tarragindi">
-<meta property="og:description" content="5 bedrooms, 4 bathrooms, pool, 455 m². Private inspections before the public launch.">
-<meta property="og:image" content="img/25v1-1600.webp">
-<meta name="theme-color" content="#232a3a">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/25v1-portrait-1200.webp" media="(max-width: 760px)">
-<link rel="preload" as="image" href="img/25v1-2400.webp" media="(min-width: 761px)">
+<meta property="og:description" content="Off market. City views, pool, 455 m² block. 布里斯班城景新宅，非公开发售。">
+<meta property="og:image" content="https://georgio-biz.github.io/24-weal-avenue-emily-xiong/img/og.jpg">
+<meta name="theme-color" content="#1b2030">
+<script>
+(function(){
+  var q=new URLSearchParams(location.search).get('lang'),s=null;
+  try{s=localStorage.getItem('weal-lang');}catch(e){}
+  var l=q==='zh'||q==='en'?q:(s||((navigator.language||'').toLowerCase().indexOf('zh')===0?'zh':'en'));
+  document.documentElement.dataset.lang=l;
+  document.documentElement.lang=l==='zh'?'zh-Hans':'en-AU';
+})();
+</script>
 <style>
+@font-face{font-family:"Newsreader";src:url(fonts/newsreader.woff2) format("woff2");font-weight:200 800;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken.woff2) format("woff2");font-weight:100 900;font-display:swap}
 :root{
-  --night:#232a3a;      /* dusk sky over the front facade */
-  --night-2:#2c3446;
-  --render:#ecebe7;     /* the house render */
-  --paper:#f7f7f5;
-  --stone:#cfcac2;      /* honed stone island */
-  --walnut:#6a4632;     /* kitchen joinery, the only accent */
-  --walnut-dark:#563826;
-  --ink:#1d1e21;
-  --muted:#5d5f64;
-  --on-night:#f1efea;
-  --on-night-muted:#b9b6b0;
-  --serif:"Newsreader", Georgia, "Times New Roman", serif;
-  --sans:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --gutter:clamp(16px, 4vw, 56px);
-  --max:1240px;
+  --ink:#1b2030;        /* night sections, text */
+  --ink-2:#252b3d;
+  --porcelain:#f8f6f1;  /* page */
+  --stone:#e8e3da;      /* panels */
+  --jade:#2e5248;       /* the one accent */
+  --jade-dark:#243f37;
+  --walnut:#6a4632;     /* hairlines and numerals */
+  --text:#1b2030;
+  --muted:#5b5f69;
+  --on-ink:#f3f0ea;
+  --on-ink-muted:#aeb1ba;
+  --rule:#ddd6ca;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --zh-serif:"Songti SC","Noto Serif SC","Source Han Serif SC","STSong","SimSun",serif;
+  --zh-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  --gutter:clamp(16px,4vw,56px);
+  --max:1200px;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);font-feature-settings:"kern","liga"}
+body{margin:0;background:var(--porcelain);color:var(--text);font:400 19px/1.6 var(--serif);font-variation-settings:"opsz" 16}
+html[data-lang=zh] body{font-family:var(--zh-sans);font-size:17px;line-height:1.8}
+html[data-lang=en] .zh,html[data-lang=zh] .en{display:none!important}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--walnut);outline-offset:3px}
+:focus-visible{outline:2px solid var(--jade);outline-offset:3px}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
-h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;margin:0}
-h2{font-size:clamp(30px,4.2vw,50px);line-height:1.08;font-variation-settings:"opsz" 60}
-h3{font-size:22px;line-height:1.25;font-variation-settings:"opsz" 24}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;letter-spacing:-.01em}
+html[data-lang=zh] h1,html[data-lang=zh] h2,html[data-lang=zh] h3{font-family:var(--zh-serif);font-weight:600;letter-spacing:0}
+h2{font-size:clamp(34px,5vw,64px);line-height:1.04;font-variation-settings:"opsz" 72}
+html[data-lang=zh] h2{font-size:clamp(28px,3.8vw,46px);line-height:1.3}
+h3{font-size:24px;line-height:1.25}
 p{margin:0 0 1em}
-.lede{font-size:clamp(18px,1.6vw,21px);line-height:1.55;max-width:34em}
+.label{font:500 14px/1.4 var(--sans);color:var(--muted)}
+html[data-lang=zh] .label{font-family:var(--zh-sans)}
 
-/* Buttons: one style, the walnut fill is the only colour accent on the page */
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:2px;background:var(--walnut);color:#fff;font:600 16px/1 var(--sans);text-decoration:none;border:0;cursor:pointer}
-.btn:hover{background:var(--walnut-dark)}
-.link{font-weight:500;text-underline-offset:3px}
+/* Header */
+.top{position:sticky;top:0;z-index:30;background:var(--ink);color:var(--on-ink);border-bottom:1px solid rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;gap:28px;min-height:56px}
+.top .home{font-family:var(--serif);font-size:19px;text-decoration:none;margin-right:auto;white-space:nowrap}
+.top nav a{font:500 15px var(--sans);color:var(--on-ink-muted);text-decoration:none;margin-left:24px}
+html[data-lang=zh] .top nav a{font-family:var(--zh-sans)}
+.top nav a:hover{color:#fff}
+.lang{display:inline-flex;border:1px solid #4a5166;border-radius:2px;overflow:hidden;flex:none}
+.lang button{all:unset;cursor:pointer;font:500 14px var(--sans);padding:0 14px;min-height:44px;display:inline-flex;align-items:center;color:var(--on-ink-muted)}
+.lang button[aria-pressed=true]{background:var(--on-ink);color:var(--ink)}
+.lang button:focus-visible{outline:2px solid #fff;outline-offset:-2px}
 
 /* Hero */
-.hero{position:relative;background:var(--night);color:var(--on-night)}
-.hero picture img{width:100%;height:min(86vh,1000px);object-fit:cover;object-position:52% 60%}
-.hero-card{position:relative;margin-top:-132px;padding-bottom:44px}
-.hero-card .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 48px;align-items:end}
-.hero h1{font-size:clamp(46px,8.4vw,118px);line-height:.95;font-variation-settings:"opsz" 72;letter-spacing:-.025em;text-shadow:0 2px 24px rgba(20,24,34,.35)}
-.hero h1 span{display:block;font-size:.42em;letter-spacing:0;margin-top:.35em;color:var(--on-night)}
-.hero .facts{margin:22px 0 0;font-size:18px;color:var(--on-night)}
-.hero .note{margin:10px 0 0;color:var(--on-night-muted);font-size:15px}
-.hero-cta{display:flex;flex-direction:column;gap:12px;align-items:flex-start;padding-bottom:4px}
-.hero-cta .link{color:var(--on-night)}
-nav.jump{background:var(--night);border-top:1px solid rgba(255,255,255,.12)}
-nav.jump ul{list-style:none;margin:0 auto;padding:0 var(--gutter);max-width:var(--max);display:flex;gap:28px;overflow-x:auto;scrollbar-width:none}
-nav.jump a{display:block;padding:15px 0;color:var(--on-night-muted);text-decoration:none;font-size:15px;white-space:nowrap}
-nav.jump a:hover{color:#fff}
+.hero{background:var(--ink);color:var(--on-ink)}
+.hero picture img{width:100%;height:min(84vh,980px);object-fit:cover;object-position:52% 62%}
+.hero .wrap{padding-top:34px;padding-bottom:40px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 48px;align-items:end}
+.hero h1{font-size:clamp(48px,8vw,112px);line-height:.95;letter-spacing:-.025em;font-variation-settings:"opsz" 72}
+.hero h1 small{display:block;font-size:.36em;letter-spacing:0;margin-top:.45em;color:var(--on-ink-muted)}
+html[data-lang=zh] .hero h1{font-family:var(--serif);font-weight:400}
+html[data-lang=zh] .hero h1 small{font-family:var(--zh-serif);font-weight:600}
+.hero .note{margin:16px 0 0;color:var(--on-ink-muted);font-size:17px;max-width:34em}
+.cta{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:2px;background:var(--jade);color:#fff;font:600 16px/1 var(--sans);text-decoration:none;border:0;cursor:pointer}
+html[data-lang=zh] .btn{font-family:var(--zh-sans)}
+.btn:hover{background:var(--jade-dark)}
+.hero .btn{background:var(--on-ink);color:var(--ink)}
+.hero .btn:hover{background:#fff}
+.hero .call{color:var(--on-ink);font:500 16px var(--sans);text-underline-offset:4px}
+html[data-lang=zh] .hero .call{font-family:var(--zh-sans)}
 
-/* The view: the one bold moment */
-.view{background:var(--night);color:var(--on-night);padding:clamp(56px,9vw,120px) 0 clamp(56px,8vw,110px);overflow:hidden}
-.view-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(28px,4vw,64px);align-items:center;max-width:calc(var(--max) + (100vw - var(--max))/2);margin-left:max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)))}
-.view h2{font-size:clamp(38px,5.6vw,76px)}
-.view p{color:var(--on-night-muted);margin-top:22px}
-.view .rooms{color:var(--on-night)}
-.view figure{margin:0}
-.view figure img{width:100%;aspect-ratio:3/2;object-fit:cover}
-.view-2{margin-top:clamp(28px,4vw,56px)}
-.view-2 figure{width:72%}
-.view figure figcaption{font-size:14px;color:var(--on-night-muted);margin-top:10px}
+/* Facts */
+.facts{background:var(--stone)}
+.facts ul{list-style:none;margin:0 auto;padding:22px var(--gutter);max-width:var(--max);display:flex;flex-wrap:wrap;gap:10px 0}
+.facts li{flex:1 1 0;min-width:120px;padding:4px 18px;border-left:1px solid #cfc7b9}
+.facts li:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font:400 30px/1.1 var(--serif);color:var(--walnut);font-variant-numeric:lining-nums}
+.facts span{font:500 14px var(--sans);color:var(--muted)}
+html[data-lang=zh] .facts span{font-family:var(--zh-sans)}
+
+/* Photo rows: every photo whole, at its own shape */
+.row{display:flex;gap:12px}
+.row+.row{margin-top:12px}
+.ph{margin:0;flex:var(--r) 1 0;min-width:0}
+.ph button{all:unset;display:block;cursor:zoom-in;width:100%}
+.ph button:focus-visible{outline:2px solid var(--jade);outline-offset:3px}
+.ph img{width:100%;height:auto;background-size:cover;background-color:var(--stone)}
+.ph figcaption{font:400 15px/1.45 var(--sans);color:var(--muted);padding:9px 0 4px}
+html[data-lang=zh] .ph figcaption{font-family:var(--zh-sans)}
+
+section{scroll-margin-top:64px}
+.sec{padding:clamp(64px,9vw,120px) 0}
+.head{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:20px 64px;align-items:end;margin-bottom:clamp(28px,4vw,48px)}
+.head p{margin:0;color:var(--muted);max-width:30em}
+
+/* City */
+.city{background:var(--ink);color:var(--on-ink)}
+.city .head p{color:var(--on-ink-muted)}
+.city h2{font-size:clamp(38px,6vw,80px)}
+html[data-lang=zh] .city h2{font-size:clamp(30px,4.4vw,54px)}
+.city .ph figcaption{color:var(--on-ink-muted)}
+.city .ph img{background-color:var(--ink-2)}
+.city .km{font:400 clamp(64px,9vw,128px)/.9 var(--serif);color:var(--on-ink);letter-spacing:-.03em}
+.city .km small{font-size:.28em;letter-spacing:0;color:var(--on-ink-muted);margin-left:.2em}
 
 /* Film */
-.film{background:var(--night);color:var(--on-night);padding:clamp(40px,6vw,80px) 0 0}
-.film video{display:block;width:100%;max-height:82vh;background:#000;aspect-ratio:16/9}
-.film-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:18px}
-.film-head p{margin:0;color:var(--on-night-muted);font-size:15px}
+.film{background:var(--ink);color:var(--on-ink);padding:0 0 clamp(56px,8vw,100px)}
+.film .bar-h{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:16px;border-top:1px solid rgba(255,255,255,.12);padding-top:28px}
+.film h3{color:var(--on-ink)}
+.film video{display:block;width:100%;background:#000;aspect-ratio:16/9}
 
-/* Sections */
-section{scroll-margin-top:12px}
-.sec{padding:clamp(64px,9vw,128px) 0}
-.sec-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px 64px;align-items:end;margin-bottom:clamp(28px,4vw,52px)}
-.sec-head p{color:var(--muted);margin:0;max-width:32em}
+/* Outside */
+.outside{background:var(--porcelain)}
 
-/* Gallery: asymmetric, varies by photo */
-.strip{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:10px}
-.floor+.floor{margin-top:34px}
-.floor-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:12px}
-.swipe{display:none;font-size:14px;color:var(--muted)}
-.gallery figure{margin:0;position:relative}
-.gallery button{all:unset;cursor:zoom-in;display:block;width:100%}
-.gallery button:focus-visible{outline:2px solid var(--walnut);outline-offset:3px}
-.gallery img{width:100%;height:100%;object-fit:cover}
-img[style*=background-image]{background-size:cover;background-position:center;background-color:var(--render)}
-.gallery figcaption{font-size:14px;color:var(--muted);padding:8px 0 14px}
-.g-w8{grid-column:span 8}.g-w4{grid-column:span 4}.g-w6{grid-column:span 6}.g-w12{grid-column:span 12}.g-w5{grid-column:span 5}.g-w7{grid-column:span 7}
-.g-w8 img,.g-w6 img,.g-w7 img,.g-w5 img{aspect-ratio:3/2}
-.g-w4 img{aspect-ratio:3/4}
-.g-w12 img{aspect-ratio:2/1}
-.gallery .level{font-family:var(--serif);font-size:26px}
+/* Inside */
+.inside{background:#fff}
+.floor+.floor{margin-top:48px}
+.floor-h{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:14px}
+.swipe{display:none}
 
-/* Floor plans */
-.plans{background:#fff}
-.plan-grid{display:grid;grid-template-columns:1fr;gap:20px}
-.plan-grid figure{margin:0;border:1px solid #e3e1dc}
+/* Plans */
+.plans{background:var(--porcelain)}
+.plan-grid{display:grid;gap:20px}
+.plan-grid figure{margin:0;background:#fff;border:1px solid var(--rule)}
 .plan-grid button{all:unset;cursor:zoom-in;display:block;width:100%}
 .plan-grid img{width:100%}
-.plan-grid figcaption{padding:12px 16px;border-top:1px solid #e3e1dc;font-size:15px;display:flex;justify-content:space-between;gap:12px}
-.areas{margin-top:36px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px 64px}
-table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:16px}
-td,th{padding:10px 0;border-bottom:1px solid #e3e1dc;text-align:left;font-weight:400}
-td:last-child,th:last-child{text-align:right}
+.plan-grid figcaption{padding:12px 16px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;gap:12px;font:500 15px var(--sans)}
+html[data-lang=zh] .plan-grid figcaption{font-family:var(--zh-sans)}
+.areas{margin-top:40px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px 64px}
+table{border-collapse:collapse;width:100%;font:400 16px var(--sans);font-variant-numeric:tabular-nums}
+html[data-lang=zh] table{font-family:var(--zh-sans)}
+td{padding:11px 0;border-bottom:1px solid var(--rule)}
+td:last-child{text-align:right}
 tr.total td{font-weight:600;border-bottom:0}
 
-/* The house */
+/* House */
+.house{background:#fff}
 .house-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(32px,6vw,96px)}
-.house-copy p{font-size:18px;line-height:1.65;max-width:33em}
-.house-copy p:first-of-type{font-family:var(--serif);font-size:clamp(22px,2.2vw,27px);line-height:1.4;font-variation-settings:"opsz" 28}
-.spec h3{margin:0 0 8px}
-.spec ul{list-style:none;margin:0 0 30px;padding:0}
-.spec li{padding:9px 0;border-bottom:1px solid #e3e1dc}
+.house-copy p{max-width:32em}
+.house-copy p:first-child{font-size:clamp(23px,2.3vw,29px);line-height:1.35;font-variation-settings:"opsz" 30}
+html[data-lang=zh] .house-copy p:first-child{font-family:var(--zh-serif);font-size:clamp(20px,2vw,24px);line-height:1.7}
+.spec h3{margin:0 0 6px}
+.spec ul{list-style:none;margin:0 0 30px;padding:0;font:400 16px/1.5 var(--sans)}
+html[data-lang=zh] .spec ul{font-family:var(--zh-sans)}
+.spec li{padding:10px 0;border-bottom:1px solid var(--rule)}
 .spec li:last-child{border-bottom:0}
 
-/* Documents */
-.docs{background:var(--render)}
-.doc-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:64px}
-.doc-list li{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid #d6d3cc}
-.doc-list span:last-child{color:var(--muted);white-space:nowrap}
-.doc-list .pending span:last-child{color:var(--walnut);font-weight:500}
+/* Docs */
+.docs{background:var(--stone)}
+.doc-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:64px;font:400 16px var(--sans)}
+html[data-lang=zh] .doc-list{font-family:var(--zh-sans)}
+.doc-list li{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid #d3cbbd}
+.doc-list li>span:last-child{color:var(--muted);white-space:nowrap}
 
 /* Location */
-.loc-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,6vw,96px);align-items:start}
-.loc-grid figure{margin:0}
-.loc-grid figcaption{font-size:14px;color:var(--muted);margin-top:10px}
-dl.facts{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0 24px}
-dl.facts dt,dl.facts dd{margin:0;padding:12px 0;border-bottom:1px solid #e3e1dc}
-dl.facts dt{color:var(--muted)}
+.loc-grid{max-width:640px}
+dl.dist{margin:24px 0 0;display:grid;grid-template-columns:auto 1fr;gap:0 24px;font:400 16px var(--sans)}
+html[data-lang=zh] dl.dist{font-family:var(--zh-sans)}
+dl.dist dt,dl.dist dd{margin:0;padding:12px 0;border-bottom:1px solid var(--rule)}
+dl.dist dt{color:var(--muted)}
+.head a,#location a{display:inline-flex;align-items:center;min-height:44px}
 
 /* Book */
-.book{background:var(--night);color:var(--on-night)}
+.book{background:var(--ink);color:var(--on-ink)}
+.book .head p,.book p{color:var(--on-ink-muted)}
 .book-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,96px)}
-.book p{color:var(--on-night-muted)}
-.agent{margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
-.agent strong{display:block;font-family:var(--serif);font-weight:400;font-size:28px;color:var(--on-night)}
-.agent a{display:inline-block;margin-top:8px;color:var(--on-night);font-size:19px;text-underline-offset:4px}
-form{display:grid;gap:22px}
-label,.legend{display:block;font-weight:500;margin-bottom:8px;color:var(--on-night)}
-label small,.legend small{font-weight:400;color:var(--on-night-muted)}
-input[type=text],input[type=tel],input[type=email]{width:100%;min-height:52px;padding:0 14px;border:1px solid #586078;border-radius:2px;background:var(--night-2);color:#fff;font:400 17px var(--sans)}
+.agent{margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
+.agent strong{display:block;font:400 30px var(--serif);color:var(--on-ink)}
+.agent a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-ink);font:500 19px var(--sans);text-underline-offset:4px}
+form{display:grid;gap:22px;font-family:var(--sans)}
+html[data-lang=zh] form{font-family:var(--zh-sans)}
+label,.legend{display:block;font-weight:500;margin-bottom:8px;color:var(--on-ink);font-size:16px}
+label small,.legend small{font-weight:400;color:var(--on-ink-muted)}
+input[type=text],input[type=tel],input[type=email]{width:100%;min-height:52px;padding:0 14px;border:1px solid #4f566b;border-radius:2px;background:var(--ink-2);color:#fff;font:400 17px var(--sans)}
 input:focus-visible{outline:2px solid #fff;outline-offset:1px}
-.hint{font-size:14px;color:var(--on-night-muted);margin-top:6px}
+.hint{font-size:14px;color:var(--on-ink-muted);margin:6px 0 0}
 fieldset{border:0;margin:0;padding:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips label{margin:0}
 .chips input{position:absolute;opacity:0;pointer-events:none}
-.chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid #586078;border-radius:2px;font-weight:400;cursor:pointer;color:var(--on-night)}
-.chips input:checked+span{background:var(--on-night);color:var(--night);border-color:var(--on-night)}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid #4f566b;border-radius:2px;font-weight:400;cursor:pointer}
+.chips input:checked+span{background:var(--on-ink);color:var(--ink);border-color:var(--on-ink)}
 .chips input:focus-visible+span{outline:2px solid #fff;outline-offset:2px}
-.err{color:#ffb4a8;font-size:14px;margin-top:6px;display:none}
+.book .btn{background:var(--on-ink);color:var(--ink)}
+.book .btn:hover{background:#fff}
+.err{color:#ffb4a8;font-size:14px;margin:6px 0 0;display:none}
 .invalid .err{display:block}
 .invalid input{border-color:#ffb4a8}
-.sent{display:none;padding:22px;border:1px solid #586078}
-.sent h3{color:var(--on-night);margin-bottom:8px}
+.sent{display:none;padding:22px;border:1px solid #4f566b}
+.sent h3{color:var(--on-ink);margin-bottom:8px}
 
-footer{background:var(--night);color:var(--on-night-muted);font-size:13px;line-height:1.55;padding:28px 0 calc(28px + env(safe-area-inset-bottom))}
-footer p{max-width:62em}
+footer{background:var(--ink);color:var(--on-ink-muted);font:400 13px/1.6 var(--sans);padding:28px 0 calc(28px + env(safe-area-inset-bottom));border-top:1px solid rgba(255,255,255,.08)}
+html[data-lang=zh] footer{font-family:var(--zh-sans)}
+footer p{max-width:64em}
 
-/* Mobile action bar */
 .bar{display:none}
 
 /* Lightbox */
-dialog.lb{border:0;padding:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;background:#121418;color:#fff}
-dialog.lb::backdrop{background:#121418}
+dialog.lb{border:0;padding:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;background:#101318;color:#fff}
+dialog.lb::backdrop{background:#101318}
 .lb-inner{position:relative;width:100%;height:100%;display:flex;flex-direction:column}
 .lb-stage{flex:1;display:flex;align-items:center;justify-content:center;min-height:0;touch-action:pan-y}
 .lb-stage img{max-width:100%;max-height:100%;object-fit:contain}
-.lb-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
-.lb-cap{font-size:15px;color:#cfcbc4;flex:1}
-.lb-count{font-variant-numeric:tabular-nums;color:#cfcbc4;font-size:15px}
-.lb-btn{all:unset;cursor:pointer;min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;color:#fff;padding:0 8px}
+.lb-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));font:400 15px var(--sans)}
+.lb-cap{color:#cfcbc4;flex:1}
+.lb-count{font-variant-numeric:tabular-nums;color:#cfcbc4}
+.lb-btn{all:unset;cursor:pointer;min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;color:#fff;padding:0 8px}
 .lb-btn:focus-visible{outline:2px solid #fff}
-.lb-close{position:absolute;top:calc(8px + env(safe-area-inset-top));right:8px;z-index:2;background:rgba(18,20,24,.6)}
+.lb.plan .lb-stage{overflow:auto;touch-action:auto;justify-content:flex-start}
+.lb.plan .lb-stage img{max-width:none;max-height:none;height:100%;width:auto}
+@media (min-width:1300px){.lb.plan .lb-stage{justify-content:center}.lb.plan .lb-stage img{height:auto;width:100%;max-height:100%;object-fit:contain}}
+.lb-close{position:absolute;top:calc(8px + env(safe-area-inset-top));right:8px;z-index:2;background:rgba(16,19,24,.6)}
 
 @media (max-width:900px){
-  .view-grid,.sec-head,.house-grid,.loc-grid,.book-grid,.areas{grid-template-columns:1fr}
-  .view-grid{margin:0;padding:0 var(--gutter)}
-  .view-2>div{display:none}
-  .view-2 figure{width:100%}
+  .head,.house-grid,.loc-grid,.book-grid,.areas{grid-template-columns:1fr}
   .doc-list{grid-template-columns:1fr}
 }
 @media (max-width:760px){
-  body{font-size:16px;padding-bottom:calc(68px + env(safe-area-inset-bottom))}
-  .hero picture img{height:auto;aspect-ratio:4/5;max-height:78vh}
-  .hero-card{margin-top:-58px;padding-bottom:30px}
-  .hero h1 span{margin-top:.5em}
-  .hero-card .wrap{grid-template-columns:1fr}
-  .hero .facts{font-size:16px}
-  .hero-cta .btn{display:none}
-  .strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(-1 * var(--gutter));padding:0 var(--gutter);scroll-padding:0 var(--gutter);scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .strip::-webkit-scrollbar{display:none}
-  .strip figure{flex:0 0 auto;width:84vw;scroll-snap-align:start}
-  .strip .g-w4{width:58vw}
-  .strip img,.g-w4 img,.g-w12 img{height:62vw;aspect-ratio:auto}
-  .strip .g-w4 img{height:62vw}
-  .gallery figcaption{padding:8px 0 0}
-  .gallery .level{font-size:22px}
-  .swipe{display:inline}
-  .film video{aspect-ratio:9/16;max-height:78vh}
+  body{font-size:17px;padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+  .top nav{display:none}
+  .top .home{font-size:17px}
+  .hero picture img{height:auto;aspect-ratio:4/5;max-height:76vh}
+  .hero .wrap{grid-template-columns:1fr;padding-top:24px;padding-bottom:30px}
+  .hero .btn{display:none}
+  .facts ul{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 0}
+  .facts li{padding:0 10px;min-width:0}
+  .facts li:nth-child(3n+1){border-left:0;padding-left:0}
+  .facts b{font-size:24px}
+  .row{display:block}
+  .row+.row,.row .ph+.ph{margin-top:14px}
+  .film video{aspect-ratio:9/16;max-height:80vh}
   .film .wrap{padding:0}
-  .film-head{padding:0 var(--gutter)}
-  .plan-grid{grid-template-columns:1fr}
-  .bar{display:grid;grid-template-columns:1fr auto;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--night);border-top:1px solid rgba(255,255,255,.14)}
-  .bar a{min-height:48px;display:flex;align-items:center;justify-content:center;text-decoration:none;border-radius:2px;font-weight:600;font-size:15px}
-  .bar .btn{padding:0 12px}
-  .bar .alt{padding:0 16px;color:var(--on-night);border:1px solid #586078}
+  .film .bar-h{padding-left:var(--gutter);padding-right:var(--gutter)}
+  .floor-body{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(-1 * var(--gutter));padding:0 var(--gutter);scroll-padding:0 var(--gutter);scrollbar-width:none}
+  .floor-body::-webkit-scrollbar{display:none}
+  .floor-body .row{display:contents}
+  .floor-body .ph{flex:0 0 auto;width:auto;scroll-snap-align:start;margin:0!important}
+  .floor-body .ph img{height:56vw;width:auto;max-width:none}
+  .floor-body .ph figcaption{max-width:84vw}
+  .swipe{display:inline}
+  .bar{display:grid;grid-template-columns:1fr auto;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--ink);border-top:1px solid rgba(255,255,255,.14)}
+  .bar a{min-height:48px;display:flex;align-items:center;justify-content:center;text-decoration:none;border-radius:2px;font:600 15px var(--sans)}
+  html[data-lang=zh] .bar a{font-family:var(--zh-sans)}
+  .bar .btn{padding:0 12px;background:var(--on-ink);color:var(--ink)}
+  .bar .alt{padding:0 18px;color:var(--on-ink);border:1px solid #4f566b}
 }
 </style>
 </head>
 <body>
 
-<header class="hero">
-  <picture>
-    <source media="(max-width: 760px)" srcset="img/25v1-portrait-1200.webp">
-    <source srcset="img/25v1-1600.webp 1600w, img/25v1-2400.webp 2400w" sizes="100vw">
-    <img src="img/25v1-1600.webp" width="2400" height="1600" alt="The front of 24 Weal Avenue at dusk: curved white render, timber battens, an arched garden gate and the lights on" fetchpriority="high">
-  </picture>
-  <div class="hero-card">
-    <div class="wrap">
-      <div>
-        <h1>24 Weal Avenue<span>Tarragindi, Brisbane</span></h1>
-        <p class="facts">5 bedrooms, 4 bathrooms, a pool and a double garage on 455 m²</p>
-        <p class="note">Brand new. Private inspections before the public launch.</p>
-      </div>
-      <div class="hero-cta">
-        <a class="btn" href="#book">Book a private inspection</a>
-        <a class="link" href="tel:0401056588">Call Emily on 0401 056 588</a>
-      </div>
+<header class="top">
+  <div class="wrap">
+    <a class="home" href="#top">24 Weal Avenue</a>
+    <nav aria-label="On this page">
+      <a href="#view"><span class="en">View</span><span class="zh">城景</span></a>
+      <a href="#outside"><span class="en">Outside</span><span class="zh">户外</span></a>
+      <a href="#inside"><span class="en">Inside</span><span class="zh">室内</span></a>
+      <a href="#plans"><span class="en">Plans</span><span class="zh">平面图</span></a>
+      <a href="#book"><span class="en">Book</span><span class="zh">预约</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language 语言">
+      <button type="button" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" data-set="zh" aria-pressed="false" lang="zh-Hans">简体</button>
     </div>
   </div>
 </header>
 
-<nav class="jump" aria-label="On this page">
+<div class="hero" id="top">
+  <picture>
+    <source media="(max-width: 760px)" srcset="img/25v1-portrait-1200.webp">
+    <source srcset="img/25v1-1200.webp 1200w, img/25v1-2400.webp 2400w" sizes="100vw">
+    <img src="img/25v1-2400.webp" width="2400" height="1600" fetchpriority="high" alt="The front of 24 Weal Avenue at dusk, gates closed, lights on">
+  </picture>
+  <div class="wrap">
+    <div>
+      <h1>24 Weal Avenue<small><span class="en">Tarragindi, Brisbane</span><span class="zh">布里斯班 · 塔拉金迪</span></small></h1>
+      <p class="note"><span class="en">Off market. Shown privately to Emily Xiong's buyers before anyone else.</span><span class="zh">非公开发售，仅向 Emily Xiong 的买家私下优先展示。</span></p>
+    </div>
+    <div class="cta">
+      <a class="btn" href="#book"><span class="en">Book a private inspection</span><span class="zh">预约私人看房</span></a>
+      <a class="call" href="tel:0401056588"><span class="en">Call Emily on 0401 056 588</span><span class="zh">致电 Emily：0401 056 588</span></a>
+    </div>
+  </div>
+</div>
+
+<div class="facts">
   <ul>
-    <li><a href="#film">Video</a></li>
-    <li><a href="#view">The view</a></li>
-    <li><a href="#photos">Photos</a></li>
-    <li><a href="#plans">Floor plans</a></li>
-    <li><a href="#house">The house</a></li>
-    <li><a href="#documents">Documents</a></li>
-    <li><a href="#location">Location</a></li>
-    <li><a href="#book">Book</a></li>
+    <li><b>5</b><span class="en">bedrooms</span><span class="zh">卧室</span></li>
+    <li><b>4</b><span class="en">bathrooms</span><span class="zh">卫浴</span></li>
+    <li><b>2</b><span class="en">car garage</span><span class="zh">双车位车库</span></li>
+    <li><b>455 m²</b><span class="en">land</span><span class="zh">土地面积</span></li>
+    <li><b>8 km</b><span class="en">to the CBD</span><span class="zh">距市中心</span></li>
+    <li><b>2026</b><span class="en">brand new, with pool</span><span class="zh">全新建成，带泳池</span></li>
   </ul>
-</nav>
+</div>
 
 <main>
 
+<section class="sec city" id="view" aria-labelledby="view-h">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="view-h"><span class="en">The Brisbane skyline, from upstairs.</span><span class="zh">登楼远眺，<br>布里斯班天际线尽收眼底</span></h2>
+      <div>
+        <p class="km">8<small>km</small></p>
+        <p><span class="en">The CBD sits about 8 km north, across the treetops. From the master suite and its balcony you watch the towers turn gold at sunset, then light up.</span><span class="zh">市中心位于北面约 8 公里，越过一片树梢即可望见。在主卧套房和阳台上，日落时可看到高楼被染成金色，随后万家灯火渐次亮起。</span></p>
+      </div>
+    </div>
+    <div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="0" aria-label="The Brisbane CBD skyline at sunset, seen from the house"><img src="img/29-1200.webp" srcset="img/29-1200.webp 1200w, img/29-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="The Brisbane CBD skyline at sunset, seen from the house" style="background-image:url(data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoUAA0APu1kqk4ppaQiMAgBMB2JQBYdhDwyla6qutsHBC5wAP7fuCyN6OOgVBwUgwiEauPO7Yl0COrj4a2UaTIvCGoHuC8G85PcVFN+sXSQoR1IEcxG4mwAAAA=)"></button><figcaption><span class="en">The skyline at sunset, from the house</span><span class="zh">从家中看到的日落城市天际线</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="1" aria-label="The master bedroom at dusk with sliding doors to the balcony and the city beyond"><img src="img/27-1200.webp" srcset="img/27-1200.webp 1200w, img/27-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="The master bedroom at dusk with sliding doors to the balcony and the city beyond" style="background-image:url(data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABwBACdASoUAA0APu1iqk2ppaQiMAgBMB2JYwCdMoGv/gOqYX3K3wnyEfhfKAD8vFurf2zPzQ5S6Ig9cIrfTFqTR/sKKFzwmV3aXDQGw3VeD3KaCXSPI1DVOzhagJlOiQE3esBsm7fJ+Qcp/PAraJRbRbCqw3c1huUaAA==)"></button><figcaption><span class="en">Master suite at dusk, with the balcony beyond</span><span class="zh">黄昏时的主卧套房，门外即是阳台</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="2" aria-label="Master suite sitting area by day, with doors open to the balcony and the city on the horizon"><img src="img/13-1200.webp" srcset="img/13-1200.webp 1200w, img/13-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Master suite sitting area by day, with doors open to the balcony and the city on the horizon" style="background-image:url(data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADwAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JYwCdABocli+uDejnr/uwAP3hDPeljpICKagEhE6dB63yi3EIw/aFmfDbZJ3m3Q3ZEvVYGL+jHKx5ydJo5VbbMyqz99dme96vyAL9yObg7A3Hx/11O6Q02VA0/eBpBw2QTfEcxbIbqzedNgAAAA==)"></button><figcaption><span class="en">Master suite by day, doors open to the balcony</span><span class="zh">白天的主卧套房，推拉门通往阳台</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="3" aria-label="Ensuite double vanity, with the city visible through the bedroom"><img src="img/12-1200.webp" srcset="img/12-1200.webp 1200w, img/12-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Ensuite double vanity, with the city visible through the bedroom" style="background-image:url(data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQBACdASoUAA0APu1iqk2ppaQiMAgBMB2JQBOmUABQs53VodcUDeNPYAD+3u952UPjAU3nVdDfs9YFqeVf0OgtEcu68RZUrJQmkEp3KL6v1qnDAKaN9WDXjm0iDFccPPaAiCrBTjyIAA==)"></button><figcaption><span class="en">Ensuite vanity, with the city through the bedroom</span><span class="zh">主卧浴室双台盆，透过卧室可见城市景观</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="4" aria-label="Aerial photo of Tarragindi at sunset with the Brisbane CBD on the horizon"><img src="img/22-1200.webp" srcset="img/22-1200.webp 1200w, img/22-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="Aerial photo of Tarragindi at sunset with the Brisbane CBD on the horizon" style="background-image:url(data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoUAA0APu1iqk2ppaQiMAgBMB2JYwCdEf/gPITkd4NiBbG0WsAA/sYGHfXBszW7gapz35tT9G7v/5RaqLEYeosf63bCLXDcFGQO65OsbC3B3/kIY9vBl8BwQBgIDqAA)"></button><figcaption><span class="en">Tarragindi at sunset, the CBD on the horizon</span><span class="zh">日落时分的塔拉金迪，远处即是市中心</span></figcaption></figure></div>
+  </div>
+</section>
+
 <section class="film" aria-labelledby="film-h">
   <div class="wrap">
-    <div class="film-head"><h2 id="film-h" style="font-size:clamp(26px,3vw,36px)">The short tour</h2><p>Sound off, tap to play</p></div>
-    <video id="film" controls playsinline muted preload="none" poster="img/25v1-1600.webp" data-wide="files/24-weal-avenue-film-16x9.mp4" data-tall="files/24-weal-avenue-film-9x16.mp4"></video>
+    <div class="bar-h"><h3 id="film-h"><span class="en">The short tour</span><span class="zh">短片导览</span></h3><span class="label" style="color:var(--on-ink-muted)"><span class="en">Sound off, tap to play</span><span class="zh">静音，点击播放</span></span></div>
+    <video id="film" controls playsinline muted preload="none" poster="img/25v1-2400.webp" data-wide="files/24-weal-avenue-film-16x9.mp4" data-tall="files/24-weal-avenue-film-9x16.mp4"></video>
   </div>
 </section>
 
-<section class="view" id="view" aria-labelledby="view-h">
-  <div class="view-grid">
-    <div>
-      <h2 id="view-h">The city, from four rooms.</h2>
-      <p class="rooms">The master suite, the upstairs living room, the void over the stairs and the fourth bedroom all look across the treetops to the Brisbane CBD.</p>
-      <p>The towers sit about 8 km away. At dusk they turn gold, then light up in the glass.</p>
-    </div>
-    <figure>
-      <img style="background-image:url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JZQCdMoGv/gOwvhUOGvx41l7ToQAA+H4T2oq6BNZCOosNr6Cpf4mEQyPyCLJ5Os405F6aXTAPzbxRrygXdxLOBQ1iUiamTQOEocOFVXYUFdhS6TNmlxPN2AAAAA==)" src="img/27-1600.webp" srcset="img/27-1600.webp 1600w, img/27-2400.webp 2400w" sizes="(max-width:900px) 100vw, 66vw" width="2400" height="1600" loading="lazy" alt="The master bedroom at dusk, with sliding doors open to the balcony and the city skyline beyond">
-      <figcaption>Master suite at dusk</figcaption>
-    </figure>
-  </div>
-  <div class="view-grid view-2">
-    <div></div>
-    <figure>
-      <img style="background-image:url(data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBACdASoUAA0APu1iqk2ppaQiMAgBMB2JQBYhkRhgcCwXpaFiyMY6AAD+1KjSVenPOG9qI1KwZ85kStlIXQ2MshdKX11/YxsNv84a1oXGUirtHe7Z28mEVM/+GgxfAAA=)" src="img/29-1600.webp" srcset="img/29-1600.webp 1600w, img/29-2400.webp 2400w" sizes="(max-width:900px) 100vw, 66vw" width="2400" height="1600" loading="lazy" alt="The Brisbane skyline at dusk, seen from the house">
-      <figcaption>The skyline from the upstairs balcony</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="sec" id="photos" aria-labelledby="photos-h">
+<section class="sec outside" id="outside" aria-labelledby="out-h">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="photos-h">Walk through</h2>
-      <p>In order, front gate to back fence. Tap any photo to see it full screen. Rooms are furnished with styling, which doesn't come with the house.</p>
+    <div class="head">
+      <h2 id="out-h"><span class="en">A private, gated yard.</span><span class="zh">独门独院，私密宽敞</span></h2>
+      <p><span class="en">A fully fenced 455 m² block with lockable gates at the street, a covered alfresco, a lawn for the kids and a pool behind glass.</span><span class="zh">455 平方米土地，四周围栏环绕，临街设有可上锁的大门。有盖户外休闲区、孩子玩耍的草坪，以及玻璃围栏泳池。</span></p>
     </div>
-    <div class="gallery" id="gallery">
-      <div class="floor">
-        <div class="floor-head"><h3 class="level">Ground floor</h3><span class="swipe">10 photos, swipe</span></div>
-        <div class="strip">
-          <figure class="g-w4"><button data-i="0"><img style="background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoNABQAPu1iqU2ppaOiMAgBMB2JZQC7MoACs9svypkOr7fjAAD9/LlWsFlWuUaifoxs9qrTKSviwZQvQzGwcYkAoqBOJfD7/Rme6jstjSRQb2V+I/QRZxxkNbAAAA==)" src="img/30v1-800.webp" width="800" height="1200" loading="lazy" alt="The arched garden gate and front steps at dusk"></button><figcaption>The arched gate</figcaption></figure>
-          <figure class="g-w8"><button data-i="1"><img style="background-image:url(data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZwCw7CKh886sLqtnZQAA/Mkb5uyKwA5/Yuw06uPqUe2PYkIhgfTpC/OKYnHDLpXFxK4/SY6zs8j+02smrx8BMurwAA==)" src="img/20-800.webp" srcset="img/20-800.webp 800w, img/20-1600.webp 1600w" sizes="(max-width:760px) 100vw, 66vw" width="1600" height="1067" loading="lazy" alt="Kitchen island in the foreground with living and dining beyond, all in one long room"></button><figcaption>Kitchen, dining and living, one room front to back</figcaption></figure>
-          <figure class="g-w7"><button data-i="2"><img style="background-image:url(data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoUAA0APu1kqU2ppaOiMAgBMB2JZQCsACKKIi504FnPNPyhAAD7oxGYT4Gu8ds6/goF59Qn0wzG2y47MLrBZ1Hug9RCaeddmjrabrVwcLUay80LsQmYzaXkbfL/Q6fLPXk5hUOJ4YrAAA==)" src="img/02-800.webp" srcset="img/02-800.webp 800w, img/02-1600.webp 1600w" sizes="(max-width:760px) 100vw, 58vw" width="1600" height="1067" loading="lazy" alt="Walnut kitchen with a curved stone-topped island"></button><figcaption>Walnut kitchen, stone island</figcaption></figure>
-          <figure class="g-w5"><button data-i="3"><img style="background-image:url(data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZQCdABuc5XJtuxTh4AD722rpH6AtJYz6g4FYqyVIFAEY/7PRYkiLsteOr+lb1/boN2OwwUQweF8fBScM68S8gvXhYGRSZ4yjE92dw6vIOgmcIuSAAA==)" src="img/28-800.webp" srcset="img/28-800.webp 800w, img/28-1600.webp 1600w" sizes="(max-width:760px) 100vw, 42vw" width="1600" height="1067" loading="lazy" alt="The kitchen at night with under-bench lighting on"></button><figcaption>The kitchen after dark</figcaption></figure>
-          <figure class="g-w4"><button data-i="4"><img style="background-image:url(data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoNABQAPu1iqk4ppaQiMAgBMB2JZQAAXpz2IGKGAwu3tgAA98TX5zJNpFAV9L4FIqLWWQTKqbaJ1F3edv/V26A/IXdvt37RNzvS+795M2F+BZu0o9m66GvybEkAAAAA)" src="img/23-800.webp" width="800" height="1200" loading="lazy" alt="Full-height walnut joinery and a brushed brass tap"></button><figcaption>Full-height walnut joinery</figcaption></figure>
-          <figure class="g-w8"><button data-i="5"><img style="background-image:url(data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZQCw7CGOVW5oMIFIpQAA/sSS/DrbvtckYbqvZH5IEUWDCvk54vD88yHLbDqghaJiO1YJk7NozQdVvTPrIbdomQFAAA==)" src="img/05-800.webp" srcset="img/05-800.webp 800w, img/05-1600.webp 1600w" sizes="(max-width:760px) 100vw, 66vw" width="1600" height="1067" loading="lazy" alt="Living and dining area with a round table and curved sofa"></button><figcaption>Living and dining</figcaption></figure>
-          <figure class="g-w6"><button data-i="6"><img style="background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASoUAA0APu1kqU2ppaOiMAgBMB2JZQCw7Bwcc2XIIOHfAAD+VGekOQq5HF/+8s652An4a4nSNqGvFKgZkzNWxUeThHynmiFWiVkIIYbNUN07G+X7kC76lQimruygAA==)" src="img/01-800.webp" srcset="img/01-800.webp 800w, img/01-1600.webp 1600w" sizes="(max-width:760px) 100vw, 50vw" width="1600" height="1067" loading="lazy" alt="Living room with sliding doors open to the alfresco"></button><figcaption>Living room, open to the alfresco</figcaption></figure>
-          <figure class="g-w6"><button data-i="7"><img style="background-image:url(data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACQAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JZQCsACHDs5X8SstgAPzARdpO3sKg7Wyaoyzoz8d0PzSkGYHKGlFV1Dcnq28Dge7q2fsv3RlO1wU5jYpHjdtrsQW7TMDlDB8xwkAA)" src="img/04-800.webp" srcset="img/04-800.webp 800w, img/04-1600.webp 1600w" sizes="(max-width:760px) 100vw, 50vw" width="1600" height="1067" loading="lazy" alt="Dining table beside wide glass doors to the alfresco"></button><figcaption>Dining beside the alfresco doors</figcaption></figure>
-          <figure class="g-w7"><button data-i="8"><img style="background-image:url(data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCdABU+pFMWJ5dEoAD4x4rRuLYQpqquQL3Mp2y/MJp5/e5XPlzR852unFzyf9SC49Olwz6QnGVj81jhtd/E6hHtPiE1ZRNHJbZB7rZA8w50Q01nqgAA)" src="img/14-800.webp" srcset="img/14-800.webp 800w, img/14-1600.webp 1600w" sizes="(max-width:760px) 100vw, 58vw" width="1600" height="1067" loading="lazy" alt="Covered alfresco with outdoor dining and the lawn beyond"></button><figcaption>Covered alfresco and lawn</figcaption></figure>
-          <figure class="g-w5"><button data-i="9"><img style="background-image:url(data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwC06CEuff8t0YNQmgAA9rkC/ykgXGPJ6QHe0ePZz7cOYIsA7UFMo4KZGOEMDRSLSWjOJKR+HV58LpRZbahnj8YlcWaHXP3YvSi9wS5NR+9jov/dmxDrP5EneoAA)" src="img/03-800.webp" srcset="img/03-800.webp 800w, img/03-1600.webp 1600w" sizes="(max-width:760px) 100vw, 42vw" width="1600" height="1067" loading="lazy" alt="Alfresco table looking out to the glass-fenced pool"></button><figcaption>Alfresco to the pool</figcaption></figure>
-        </div>
-      </div>
-      <div class="floor">
-        <div class="floor-head"><h3 class="level">Upstairs</h3><span class="swipe">11 photos, swipe</span></div>
-        <div class="strip">
-          <figure class="g-w8"><button data-i="10"><img style="background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCdABsGxOB40sAA/eEM96RR6N8PgkExMvr39HsDcgOVAsJye4HNbbtmqleKYQ87CX+R8QqFp7IN0/oxlrPlUYqPdw5xSDdUzPLXGyOioBlcfMnu7WXPZFL5GbwiaDGgUAAA)" src="img/13-800.webp" srcset="img/13-800.webp 800w, img/13-1600.webp 1600w" sizes="(max-width:760px) 100vw, 66vw" width="1600" height="1067" loading="lazy" alt="Upstairs living room with full-height glass and the city skyline in the distance"></button><figcaption>Upstairs living, with the city outside</figcaption></figure>
-          <figure class="g-w4"><button data-i="11"><img style="background-image:url(data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACQAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JZQCdAB4hlLry3J7QAP5mJ+By0h0TZjSNDGQSxiuwMOvs2IQtdoc8Suu6jP6Bam3Wz465zUZxPf4T28d4VrBS89ZkRHMDX2KkpiqO4AAAAA==)" src="img/17-800.webp" srcset="img/17-800.webp 800w, img/17-1600.webp 1600w" sizes="(max-width:760px) 100vw, 33vw" width="1600" height="1067" loading="lazy" alt="Upstairs living room with a sofa and artwork"></button><figcaption>The family room upstairs</figcaption></figure>
-          <figure class="g-w7"><button data-i="12"><img style="background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoUAA0APu1iqk4ppaQiMAgBMB2JZQCdBagBe6wg54ja/rOMTAD3J3vvbYZ3vFJLiPLhO0DGeFCeiyd9H7jKt8rs/P+YHV/h5XTKs/+jP2XFcxWxffldreISrzYAAA==)" src="img/18-800.webp" srcset="img/18-800.webp 800w, img/18-1600.webp 1600w" sizes="(max-width:760px) 100vw, 58vw" width="1600" height="1067" loading="lazy" alt="Master bedroom with an upholstered bed and doors to the balcony"></button><figcaption>Master suite</figcaption></figure>
-          <figure class="g-w5"><button data-i="13"><img style="background-image:url(data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZQCw7AM34Yz8hvAA88JB7PAIRbIHiwOzO9LqmlYPx27+MZOu2T9jTnaOPMhOQ66+ydDxsIadRWqpOlrOW35f/R84jApGJ257UlxtoAA=)" src="img/11-800.webp" srcset="img/11-800.webp 800w, img/11-1600.webp 1600w" sizes="(max-width:760px) 100vw, 42vw" width="1600" height="1067" loading="lazy" alt="Master ensuite with twin basins, a freestanding bath and a walk-in shower"></button><figcaption>Ensuite: twin basins, freestanding bath</figcaption></figure>
-          <figure class="g-w6"><button data-i="14"><img style="background-image:url(data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JYwCdMoACNM536xOZoopwAP7Ut7SOb8C2O1SRct7W4qwmxpepILITyMVzukDQD+K1v6D6V62Jbym2r0+kVqJO/lmeFw+mAAA=)" src="img/12-800.webp" srcset="img/12-800.webp 800w, img/12-1600.webp 1600w" sizes="(max-width:760px) 100vw, 50vw" width="1600" height="1067" loading="lazy" alt="Double vanity with timber mirrors and a view through to the balcony"></button><figcaption>Double vanity, timber mirrors</figcaption></figure>
-          <figure class="g-w6"><button data-i="15"><img style="background-image:url(data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACQAwCdASoUAA0APu1iqk2ppaQiMAgBMB2JZQC7ABA9s8zTHdaAANsWctE5Bse5QXIfQiHWfIQe9vuFxVKL8P5O4UbBwY4XyOd/vNsPoapppgIofwsXAgR70cebAAAA)" src="img/24-800.webp" srcset="img/24-800.webp 800w, img/24-1600.webp 1600w" sizes="(max-width:760px) 100vw, 50vw" width="1600" height="1067" loading="lazy" alt="Ensuite looking back to the vanity, with the city visible through the bedroom"></button><figcaption>Ensuite to bedroom</figcaption></figure>
-          <figure class="g-w6"><button data-i="16"><img style="background-image:url(data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwBACdASoUAA0APu1kqU2ppaOiMAgBMB2JZQC06B6XXu1fBF8uuLG/HoAA/dSOWdQlOIxemzq6GTXCAqJsF5bU9N1DtlyqVfhcgK6mbzlTAVx0Cz6nIIdMQhnXBEAA)" src="img/08-800.webp" srcset="img/08-800.webp 800w, img/08-1600.webp 1600w" sizes="(max-width:760px) 100vw, 50vw" width="1600" height="1067" loading="lazy" alt="A large carpeted bedroom with a walk-in robe beside the door"></button><figcaption>Bedroom with walk-in robe</figcaption></figure>
-          <figure class="g-w6"><button data-i="17"><img style="background-image:url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JZQCw7B6JIdNUsLLe6daAAP3fLKq6zTcDe+eZTudu2tLP3mIz2ThYp/JCnCGBr7neljJ1H8V9a+bZCrCPWAz72yb053hjxIizQEa7ZuGijSbAAAA=)" src="img/06-800.webp" srcset="img/06-800.webp 800w, img/06-1600.webp 1600w" sizes="(max-width:760px) 100vw, 50vw" width="1600" height="1067" loading="lazy" alt="Bedroom with two windows to the treetops"></button><figcaption>Bedroom with a treetop outlook</figcaption></figure>
-          <figure class="g-w5"><button data-i="18"><img style="background-image:url(data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoUAA0APu1iqk4ppaQiMAgBMB2JZQAAUqoPprzHcEnI+ZCAAAD8geKvbhKKANr/lptKrVcVP4+bkM7yvamxnK7imlk3A4AYCfex0yMXz/d9cAAA)" src="img/10-800.webp" srcset="img/10-800.webp 800w, img/10-1600.webp 1600w" sizes="(max-width:760px) 100vw, 42vw" width="1600" height="1067" loading="lazy" alt="A bright carpeted bedroom with a timber bedhead"></button><figcaption>Bedroom</figcaption></figure>
-          <figure class="g-w7"><button data-i="19"><img style="background-image:url(data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZwC7ACGCA0ajOhR4APy/4lVv8f4/vEeGOMI/y6UlJ2fdhl6LcLsSEJMfMMZrYeDIHmUq2lgpmAQxYhTP0qkRjAAAAA==)" src="img/19-800.webp" srcset="img/19-800.webp 800w, img/19-1600.webp 1600w" sizes="(max-width:760px) 100vw, 58vw" width="1600" height="1067" loading="lazy" alt="Bedroom with large windows and artwork"></button><figcaption>Bedroom</figcaption></figure>
-          <figure class="g-w12"><button data-i="20"><img style="background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZQAANWRts8m2kAAA/icif/PVV/eU9jhTBpcyh4PIPCv3gE1GNhluCZxJLzNk4tGQLfLNHeMmUHero3SsoRnOffBRcC2jN8AAAA==)" src="img/07-800.webp" srcset="img/07-800.webp 800w, img/07-1600.webp 1600w" sizes="100vw" width="1600" height="1067" loading="lazy" alt="Bathroom with a stone-look tile, oval basin, timber vanity and frameless shower"></button><figcaption>One of four bathrooms</figcaption></figure>
-        </div>
-      </div>
-      <div class="floor">
-        <div class="floor-head"><h3 class="level">Outside</h3><span class="swipe">2 photos, swipe</span></div>
-        <div class="strip">
-          <figure class="g-w8"><button data-i="21"><img style="background-image:url(data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAA0APu1kqk4ppaQiMAgBMB2JZQC/OCHwyq0DSi0q/CwA/d3xFMnQg5UcGt7HugfoFyAZ94T+HmVEpu5m24qYI6YYHBwa1PPQ2868m4ffU9Jps2E5LBeAAAA=)" src="img/26-800.webp" srcset="img/26-800.webp 800w, img/26-1600.webp 1600w" sizes="(max-width:760px) 100vw, 66vw" width="1600" height="1067" loading="lazy" alt="The pool and rear of the house at dusk, with the alfresco lit"></button><figcaption>Pool and alfresco at dusk</figcaption></figure>
-          <figure class="g-w4"><button data-i="22"><img style="background-image:url(data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBACdASoUAA0APu1kqU2ppaOiMAgBMB2JZQCsEf/gPHnGXhZU2wBIAAD+xgYd87x1veyzGbpC4ixFGPNzQ0pPzucvliqKqenJhGWCgbRzDRMij/7Pgj/IFJthNBBrQAA=)" src="img/22-800.webp" srcset="img/22-800.webp 800w, img/22-1600.webp 1600w" sizes="(max-width:760px) 100vw, 33vw" width="1600" height="1067" loading="lazy" alt="Aerial photo of Tarragindi at sunset with the Brisbane CBD on the horizon"></button><figcaption>Tarragindi, with the CBD on the horizon</figcaption></figure>
-        </div>
-      </div>
+    <div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="5" aria-label="The pool, lawn and lit alfresco at dusk"><img src="img/26-1200.webp" srcset="img/26-1200.webp 1200w, img/26-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="The pool, lawn and lit alfresco at dusk" style="background-image:url(data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoUAA0APu1iqk4ppaQiMAgBMB2JZQDA3B7HS0ZDU0k2WKwA/d9FeIe1VZ/gpjIMQdqvO15Vct52bDpid+TrhLOqJW4oFVaRu9x1OoUgTn5IKZSrh7NPt11int8SAAAA)"></button><figcaption><span class="en">Pool, lawn and alfresco at dusk</span><span class="zh">黄昏时的泳池、草坪与户外休闲区</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:0.6672"><button type="button" data-i="6" aria-label="The arched garden gate, closed, at dusk"><img src="img/30v1-1200.webp" srcset="img/30v1-1200.webp 1200w, img/30v1-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="1600" height="2398" loading="lazy" alt="The arched garden gate, closed, at dusk" style="background-image:url(data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASoNABQAPu1kqU2ppaOiMAgBMB2JYwC7ABub3CD1kdC4AAD9/LlWthSrbE78jeOD7+CS3ZcK0XUV1w32boFX71O8DvpwruP5EX9RlOL2FiA58WBdP5pnrbQox3W7oAAA)"></button><figcaption><span class="en">Arched garden gate</span><span class="zh">拱形花园门</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="7" aria-label="The front of the house by day with the driveway and garden gates closed"><img src="img/16v1-1200.webp" srcset="img/16v1-1200.webp 1200w, img/16v1-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="The front of the house by day with the driveway and garden gates closed" style="background-image:url(data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoUAA0APu1iqU2ppaQiMAgBMB2JQBdiP/wHc8a2dO3C83+GfdgA/q/SUrjNysNRyTPIAq8XDsjGhjASDWDC+UQDFASD0nqyzV5cOIGOzUYbVfKJ9me4dV50VaXmtinhMGDKAEH6hBRX73LF73JkTStIrSXydLamqmMAAA==)"></button><figcaption><span class="en">Front gates closed</span><span class="zh">临街大门关闭时</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="8" aria-label="Covered alfresco with outdoor dining and the lawn beside it"><img src="img/14-1200.webp" srcset="img/14-1200.webp 1200w, img/14-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Covered alfresco with outdoor dining and the lawn beside it" style="background-image:url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOmUAArY9jcZxoAAPzQ/eBWjthCmq072JwEqs14wlzwFvRqRhehFRuE0iHg2hv+01blNkSqF6FaDocbiCkk/Ec5DC97wJHCdjd7ldoSkorjoiGxHMTIMpAAAA==)"></button><figcaption><span class="en">Covered alfresco and lawn</span><span class="zh">有盖户外休闲区与草坪</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="9" aria-label="Alfresco dining looking out to the glass-fenced pool"><img src="img/03-1200.webp" srcset="img/03-1200.webp 1200w, img/03-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Alfresco dining looking out to the glass-fenced pool" style="background-image:url(data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOgBHvmwj2IdgVqK+AA9r1uzXe4EqFGaoTWXgKawFJdMQ2GdfRJCzBcWE1uWpSronn0RU93ApomoV40S0qTZleU3ntyjRfTYjSvHNuvif0UoXt6/heeLQaDksAA)"></button><figcaption><span class="en">Alfresco dining beside the pool</span><span class="zh">泳池旁的户外用餐区</span></figcaption></figure></div>
+  </div>
+</section>
+
+<section class="sec inside" id="inside" aria-labelledby="in-h">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="in-h"><span class="en">Inside</span><span class="zh">室内</span></h2>
+      <p><span class="en">Tap any photo to see it full screen. The furniture is styling for the photos and isn't included.</span><span class="zh">点击任意照片可全屏查看。照片中的家具为样板布置，不包含在出售范围内。</span></p>
+    </div>
+    <div class="floor">
+      <div class="floor-h"><h3><span class="en">Ground floor</span><span class="zh">一楼</span></h3><span class="label swipe"><span class="en">9 photos, swipe</span><span class="zh">9 张照片，左右滑动</span></span></div>
+      <div class="floor-body"><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="10" aria-label="Kitchen island with dining and living beyond, all one room"><img src="img/20-1200.webp" srcset="img/20-1200.webp 1200w, img/20-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="Kitchen island with dining and living beyond, all one room" style="background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoUAA0APu1iqk2ppaQiMAgBMB2JZQCw7CKkqzrdYMpECIAA/MkciTuprGyeX7uBskF+Oc5fBcWXDbYtIQCHzJ0dHGcRd+AT5g5PM4DO7BfdaDOt3XSumCiL0gAAAA==)"></button><figcaption><span class="en">Kitchen, dining and living, one room</span><span class="zh">厨房、餐厅与客厅一体相连</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="11" aria-label="Walnut kitchen with a curved stone island"><img src="img/02-1200.webp" srcset="img/02-1200.webp 1200w, img/02-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Walnut kitchen with a curved stone island" style="background-image:url(data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQAwCdASoUAA0APu1iqk2ppaQiMAgBMB2JYwC06Brf8LAjOT3bBgAA9kPwAIpNBk9KlZMvGqFB360cFHLCuhtfdxu+LI4fP3vmAKsTqmNTGHa31pEIL8tBSaQN2ksm6za35yAU9/obg/0ILwiPW3AAAAA=)"></button><figcaption><span class="en">Walnut kitchen, stone island</span><span class="zh">胡桃木橱柜与石材岛台</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="12" aria-label="The kitchen at night with the under-bench lights on"><img src="img/28-1200.webp" srcset="img/28-1200.webp 1200w, img/28-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="The kitchen at night with the under-bench lights on" style="background-image:url(data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZQCdMoACszS2JNBj7PgA+9tq6R+g2Op61KJTTPp8AS4j2/r/8GWWhhyRXluAuIsm6YnHy5xuf9Mt6Baw0WOXIAbWUbE2/frxZKbW6xFpdAm8jowAAA==)"></button><figcaption><span class="en">The kitchen at night</span><span class="zh">夜晚的厨房</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:0.6672"><button type="button" data-i="13" aria-label="Full-height walnut joinery and a brass tap"><img src="img/23-1200.webp" srcset="img/23-1200.webp 1200w, img/23-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="1600" height="2398" loading="lazy" alt="Full-height walnut joinery and a brass tap" style="background-image:url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoNABQAPu1iqU2ppaQiMAgBMB2JZQCsAB6vrmxzvu96uPoMAAD8iESep6P66lGFcfczz9OI3KJSLwsXAWXgp0dWvoxm0MMsEYaD0Q7YzNp1yilfOI7zx0QlAGA1KUrw0Mau5toAAAA=)"></button><figcaption><span class="en">Full-height joinery</span><span class="zh">通顶定制柜</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="14" aria-label="Living and dining area"><img src="img/05-1200.webp" srcset="img/05-1200.webp 1200w, img/05-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Living and dining area" style="background-image:url(data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCdAB7HIIeuOS26lwyAAP7UNxsWSh0Mxe/R/GSje11/qVFWaMuzWBAL70NVFvDnXCD4uT8WVcMAMkY4H8jAl7yGweGnIjL0CsAA)"></button><figcaption><span class="en">Dining and living</span><span class="zh">餐厅与客厅</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="15" aria-label="Living room with doors open to the alfresco"><img src="img/01-1200.webp" srcset="img/01-1200.webp 1200w, img/01-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Living room with doors open to the alfresco" style="background-image:url(data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCw7CKUKhXxjgRHvFAA/owsPsbq08oRABvAeVmoQKHHOlPqzpNd4Ho0kryjk/SS6ek8YEnqIj5yHjJIcyvNuQp92e0bBwqHgAAA)"></button><figcaption><span class="en">Living, open to the alfresco</span><span class="zh">客厅直通户外休闲区</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="16" aria-label="Dining table beside wide glass doors"><img src="img/04-1200.webp" srcset="img/04-1200.webp 1200w, img/04-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Dining table beside wide glass doors" style="background-image:url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCw7CHEuOMSPibhQAD99GbdE39WTWDneMEollB1pxoxco/VBaTXqCs1BPnbF2fQPSwriMNGjBsgwZlsxiTbcul5lu01Fr66rLLJnKTN/0AAAAA=)"></button><figcaption><span class="en">Dining beside the glass doors</span><span class="zh">玻璃门旁的餐厅</span></figcaption></figure></div></div>
+    </div>
+    <div class="floor">
+      <div class="floor-h"><h3><span class="en">Upstairs</span><span class="zh">二楼</span></h3><span class="label swipe"><span class="en">10 photos, swipe</span><span class="zh">10 张照片，左右滑动</span></span></div>
+      <div class="floor-body"><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="17" aria-label="Master bedroom with an upholstered bed"><img src="img/18-1200.webp" srcset="img/18-1200.webp 1200w, img/18-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Master bedroom with an upholstered bed" style="background-image:url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZQCdAB8uACHskFpq/vAA9ynk+SzlPU2WKCH6LVbhGWNjf3xO2aQbsF9H7jU3rldn6Dcn6Ohn96n/r1ddL0lbDfXC1NFPPI3Xm6Nm4FH2AAAA)"></button><figcaption><span class="en">Master suite</span><span class="zh">主卧套房</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="18" aria-label="Ensuite with twin basins, a freestanding bath and a walk-in shower"><img src="img/11-1200.webp" srcset="img/11-1200.webp 1200w, img/11-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Ensuite with twin basins, a freestanding bath and a walk-in shower" style="background-image:url(data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZQAAUWWgouSW2+CS1QAA9Ea/QIW9+U1uMtnaBeM/nPGGUAKXYyxp9boQWJPkIYnHsQTD2/0HxNJePJiKDSWk5eP+MkGgvD82vdBTg5uOMSU77QgAAA==)"></button><figcaption><span class="en">Ensuite, twin basins and a freestanding bath</span><span class="zh">主卧浴室：双台盆与独立浴缸</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="19" aria-label="Upstairs living room"><img src="img/17-1200.webp" srcset="img/17-1200.webp 1200w, img/17-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="Upstairs living room" style="background-image:url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCw7CGRMOBCC3BBrqAA/mYldYzOAAllfvqXK1r35K89nIu33950eoayykjq5gGTseFCtqkAOPWBkR8J7eSZ0lEIO2bBplEIzoY9fR9QSv0JgAA=)"></button><figcaption><span class="en">Upstairs living</span><span class="zh">二楼起居室</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="20" aria-label="Bedroom with a walk-in robe"><img src="img/08-1200.webp" srcset="img/08-1200.webp 1200w, img/08-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Bedroom with a walk-in robe" style="background-image:url(data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQBACdASoUAA0APu1iqU2ppaQiMAgBMB2JZQC7AB5QSllvshLYgXySEAD+VWahJf15HvqETI0Nc02u07AZf011ASPzULtdaIn26gvj2T8axt365P0nZUee4YgC+3cMCGZ7LMLkk4AAAA==)"></button><figcaption><span class="en">Bedroom with walk-in robe</span><span class="zh">带步入式衣帽间的卧室</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="21" aria-label="Bedroom with windows to the treetops"><img src="img/06-1200.webp" srcset="img/06-1200.webp 1200w, img/06-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Bedroom with windows to the treetops" style="background-image:url(data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQBACdASoUAA0APu1iqU2ppaQiMAgBMB2JYwC7ACIfqOg5rvKY9qHiwj3gAP36pK8gVO2raYTDJvNU4PrMgdlO9m4fgld1ayQbkiSvD7Ekva/xGGhjzXjdHmcy+h1/eMKmrNf1cuzTTQSY9eKoWH/MAAA=)"></button><figcaption><span class="en">Bedroom with a treetop outlook</span><span class="zh">可望见树梢的卧室</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="22" aria-label="Bedroom with large windows"><img src="img/19-1200.webp" srcset="img/19-1200.webp 1200w, img/19-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Bedroom with large windows" style="background-image:url(data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoUAA0APu1iqk2ppaQiMAgBMB2JZQCdACG+9D3QjKF6UeRJAAD99ERPinrmRJjJQyMh+blARr1Nfsc+qK6nRjoPEYXzQvVmEFIyLyqpaTEDyJn1uWZdKOF4//Z/QAAA)"></button><figcaption><span class="en">Bedroom with two big windows</span><span class="zh">两扇大窗、采光充足的卧室</span></figcaption></figure><figure class="ph" style="--r:1.5000"><button type="button" data-i="23" aria-label="Bedroom with a timber bedhead"><img src="img/10-1200.webp" srcset="img/10-1200.webp 1200w, img/10-2400.webp 2400w" sizes="(max-width:760px) 100vw, 50vw" width="2400" height="1600" loading="lazy" alt="Bedroom with a timber bedhead" style="background-image:url(data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JYwCdACG8Ad1JL3cHnSCT0hkAAP3dN0bEXxjUdV8sLvZFPoCuQiNAxgoZV7DV1t/k/R0MyPhOKyeFN4EYh5m9rxTgAA==)"></button><figcaption><span class="en">Bedroom with a timber bedhead</span><span class="zh">木质床头的卧室</span></figcaption></figure></div><div class="row"><figure class="ph" style="--r:1.5000"><button type="button" data-i="24" aria-label="Bathroom with a timber vanity and frameless shower"><img src="img/07-1200.webp" srcset="img/07-1200.webp 1200w, img/07-2400.webp 2400w" sizes="(max-width:760px) 100vw, 100vw" width="2400" height="1600" loading="lazy" alt="Bathroom with a timber vanity and frameless shower" style="background-image:url(data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZQCw7BQfdrqzMif/VgD+JyJ/89Vii9HaqF1W5IN1E7IPLMGSxan0Oe0ppQ3ZRIjCyWSQuko4kxxmcSG96QRVVeiLdQHBJOcrKog0QwAAAA==)"></button><figcaption><span class="en">Bathroom</span><span class="zh">浴室</span></figcaption></figure></div></div>
     </div>
   </div>
 </section>
 
 <section class="sec plans" id="plans" aria-labelledby="plans-h">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="plans-h">Floor plans</h2>
-      <p>Both levels, drawn from the builder's plans. Tap a plan to zoom in, or <a class="link" href="files/24-weal-avenue-floor-plans.pdf?v=2" download>download the PDF</a>.</p>
+    <div class="head">
+      <h2 id="plans-h"><span class="en">Floor plans</span><span class="zh">平面图</span></h2>
+      <p><span class="en">Tap a plan to zoom in, or <a href="files/24-weal-avenue-floor-plans.pdf?v=3" download>download the PDF</a>.</span><span class="zh">点击平面图可放大查看，或<a href="files/24-weal-avenue-floor-plans.pdf?v=3" download>下载 PDF</a>。</span></p>
     </div>
     <div class="plan-grid">
-      <figure><button data-plan="0" aria-label="Open the ground floor plan full screen"><img src="img/plan-ground-1400.webp?v=2" width="1400" height="507" loading="lazy" alt="Ground floor plan: garage, entry, media room, gym or fifth bedroom, powder room with shower, laundry, butler's pantry, kitchen, living, dining and alfresco"></button><figcaption><span>Ground floor</span><span>116.26 m²</span></figcaption></figure>
-      <figure><button data-plan="1" aria-label="Open the first floor plan full screen"><img src="img/plan-first-1400.webp?v=2" width="1400" height="422" loading="lazy" alt="First floor plan: master suite with ensuite and balcony, three more bedrooms, a second ensuite, family bathroom and upstairs living"></button><figcaption><span>First floor</span><span>149.37 m²</span></figcaption></figure>
+      <figure><button type="button" data-plan="0" aria-label="Open the ground floor plan"><img src="img/plan-ground-1400.webp?v=3" width="1400" height="507" loading="lazy" alt="Ground floor plan: alfresco, dining, living, kitchen, butler's pantry, laundry, media room, gym, powder room with shower, entry, porch and double garage"></button><figcaption><span><span class="en">Ground floor</span><span class="zh">一楼</span></span><span>116.26 m²</span></figcaption></figure>
+      <figure><button type="button" data-plan="1" aria-label="Open the first floor plan"><img src="img/plan-first-1400.webp?v=3" width="1400" height="422" loading="lazy" alt="First floor plan: master suite with ensuite, two robes and balcony, three more bedrooms, a second ensuite, bathroom and rumpus"></button><figcaption><span><span class="en">First floor</span><span class="zh">二楼</span></span><span>149.37 m²</span></figcaption></figure>
     </div>
     <div class="areas">
-      <div>
-        <h3>Areas</h3>
-        <p style="color:var(--muted);margin-top:8px">From the builder's floor area schedule, Homes by CMA, issue 20 Oct 2025.</p>
-      </div>
+      <div><h3><span class="en">Areas</span><span class="zh">面积</span></h3></div>
       <table>
         <tbody>
-          <tr><td>Ground floor living</td><td>116.26 m²</td></tr>
-          <tr><td>First floor living</td><td>149.37 m²</td></tr>
-          <tr><td>Double garage</td><td>44.25 m²</td></tr>
-          <tr><td>Alfresco</td><td>19.02 m²</td></tr>
-          <tr><td>Balcony</td><td>14.52 m²</td></tr>
-          <tr><td>Porch</td><td>10.30 m²</td></tr>
-          <tr class="total"><td>Total under roof</td><td>353.72 m²</td></tr>
+          <tr><td><span class="en">Ground floor living</span><span class="zh">一楼室内面积</span></td><td>116.26 m²</td></tr>
+          <tr><td><span class="en">First floor living</span><span class="zh">二楼室内面积</span></td><td>149.37 m²</td></tr>
+          <tr><td><span class="en">Double garage</span><span class="zh">双车库</span></td><td>44.25 m²</td></tr>
+          <tr><td><span class="en">Alfresco</span><span class="zh">户外休闲区</span></td><td>19.02 m²</td></tr>
+          <tr><td><span class="en">Balcony</span><span class="zh">阳台</span></td><td>14.52 m²</td></tr>
+          <tr><td><span class="en">Porch</span><span class="zh">门廊</span></td><td>10.30 m²</td></tr>
+          <tr class="total"><td><span class="en">Total under roof</span><span class="zh">总建筑面积</span></td><td>353.72 m²</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 </section>
 
-<section class="sec" id="house" aria-labelledby="house-h">
+<section class="sec house" id="house" aria-labelledby="house-h">
   <div class="wrap">
-    <div class="sec-head"><h2 id="house-h">The house</h2></div>
+    <div class="head"><h2 id="house-h"><span class="en">The house</span><span class="zh">房屋概览</span></h2></div>
     <div class="house-grid">
       <div class="house-copy">
-        <p>Downstairs is one long room from the front door to the back lawn, and upstairs is where the family lives.</p>
-        <p>The kitchen sits in the middle of it: full-height walnut, a curved stone island and a butler's pantry behind, with the laundry next door. Dining and living open through wide glass doors to a covered alfresco and the pool. Off the entry there's a media room and a fifth room that works as a gym, study or guest bedroom, with its own shower room beside it.</p>
-        <p>Upstairs, four bedrooms surround a second living room. The master has two walk-in robes, a balcony facing the city and an ensuite with twin basins and a freestanding bath. A second bedroom has its own ensuite, and the other two share the family bathroom.</p>
-        <p>It's built by Homes by CMA on a Truecore steel frame, which is termite-proof and carries a 50-year warranty. The external walls are AAC panel with R2.0 insulation. Ceilings are 3 metres downstairs, and the windows reach 2.4 metres. Final certificates were issued in August 2026, and the structural warranty and QBCC home warranty pass to the next owner.</p>
+        <p><span class="en">Downstairs is one long room from the front door to the back lawn. Upstairs is where the family sleeps, and the master suite looks out to the city.</span><span class="zh">一楼从正门到后院草坪一气呵成，宽敞通透；二楼是家人的卧室区，主卧套房可远眺城市景观。</span></p>
+        <p><span class="en">The kitchen sits in the middle of it all: full-height walnut, a curved stone island and a butler's pantry behind, with the laundry next door. Dining and living open through wide glass doors to the covered alfresco and the pool.</span><span class="zh">厨房位于整个空间的中心：通顶胡桃木橱柜、弧形石材岛台，后方设有备餐间，隔壁是洗衣房。餐厅与客厅通过宽大的玻璃门连接有盖户外休闲区和泳池。</span></p>
+        <p><span class="en">Off the entry there's a media room and a fifth room that works as a gym, study or a bedroom for visiting family, with a shower room right beside it.</span><span class="zh">入口旁设有影音室，另有一间可作健身房、书房或长辈来访时居住的客房，旁边紧邻带淋浴的卫生间。</span></p>
+        <p><span class="en">Upstairs, four bedrooms surround a second living room. The master has two walk-in robes, a balcony facing the city and an ensuite with twin basins and a freestanding bath. A second bedroom has its own ensuite.</span><span class="zh">二楼四间卧室环绕第二起居室。主卧配有两个步入式衣帽间、面向城市的阳台，以及双台盆和独立浴缸的套间浴室。另一间卧室也带独立浴室。</span></p>
       </div>
       <div class="spec">
-        <h3>Rooms</h3>
+        <h3><span class="en">Rooms</span><span class="zh">房间</span></h3>
         <ul>
-          <li>4 bedrooms upstairs, plus a gym or fifth bedroom downstairs</li>
-          <li>Master with two walk-in robes, ensuite and balcony</li>
-          <li>4 bathrooms, including 2 ensuites</li>
-          <li>Upstairs living room with city views</li>
-          <li>Media room</li>
-          <li>Butler's pantry and separate laundry</li>
+          <li><span class="en">4 bedrooms upstairs, plus a fifth room downstairs</span><span class="zh">二楼 4 间卧室，一楼另有第 5 间房</span></li>
+          <li><span class="en">Master with two walk-in robes, ensuite and balcony</span><span class="zh">主卧：两个步入式衣帽间、套间浴室和阳台</span></li>
+          <li><span class="en">4 bathrooms, including 2 ensuites</span><span class="zh">4 间浴室，其中 2 间为套间浴室</span></li>
+          <li><span class="en">Upstairs living room</span><span class="zh">二楼起居室</span></li>
+          <li><span class="en">Media room</span><span class="zh">影音室</span></li>
+          <li><span class="en">Butler's pantry and separate laundry</span><span class="zh">备餐间及独立洗衣房</span></li>
         </ul>
-        <h3>Outside</h3>
+        <h3><span class="en">Outside</span><span class="zh">户外</span></h3>
         <ul>
-          <li>In-ground pool with glass fencing</li>
-          <li>Covered alfresco and level lawn</li>
-          <li>Double garage, 44 m², with storage</li>
-          <li>Gated driveway, arched garden gate</li>
-          <li>455 m² block</li>
+          <li><span class="en">In-ground pool with glass fencing</span><span class="zh">嵌入式泳池，玻璃围栏</span></li>
+          <li><span class="en">Covered alfresco and lawn</span><span class="zh">有盖户外休闲区和草坪</span></li>
+          <li><span class="en">Double garage, 44 m²</span><span class="zh">双车库，44 平方米</span></li>
+          <li><span class="en">Lockable gates at the street</span><span class="zh">临街可上锁大门</span></li>
         </ul>
-        <h3>Build</h3>
+        <h3><span class="en">Finishes</span><span class="zh">装修</span></h3>
         <ul>
-          <li>Homes by CMA, completed 2026</li>
-          <li>Truecore steel frame, 50-year warranty</li>
-          <li>AAC external walls, R2.0 insulation</li>
-          <li>3.0 m ceilings downstairs, square-set throughout</li>
-          <li>Ducted air-conditioning</li>
+          <li><span class="en">3 m ceilings downstairs</span><span class="zh">一楼层高 3 米</span></li>
+          <li><span class="en">Walnut joinery and stone benchtops</span><span class="zh">胡桃木定制柜与石材台面</span></li>
+          <li><span class="en">Ducted air-conditioning</span><span class="zh">全屋中央空调</span></li>
         </ul>
       </div>
     </div>
@@ -414,20 +432,18 @@ dialog.lb::backdrop{background:#121418}
 
 <section class="sec docs" id="documents" aria-labelledby="docs-h">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="docs-h">Certificates and warranties</h2>
-      <p>Everything a new build should come with. Emily can send copies before you inspect.</p>
+    <div class="head">
+      <h2 id="docs-h"><span class="en">Certificates</span><span class="zh">证书与保险</span></h2>
+      <p><span class="en">Emily can send copies before you inspect.</span><span class="zh">看房前可向 Emily 索取副本。</span></p>
     </div>
     <ul class="doc-list">
-      <li><span>Form 21 final inspection certificate</span><span>26 Aug 2026</span></li>
-      <li><span>Building approval and decision notice</span><span>On file</span></li>
-      <li><span>BCC plumbing final inspection certificate</span><span>24 Jun 2026</span></li>
-      <li><span>25-year structural warranty</span><span>On file</span></li>
-      <li><span>QBCC home warranty insurance, house</span><span>Transfers</span></li>
-      <li><span>QBCC home warranty insurance, pool</span><span>Transfers</span></li>
-      <li><span>Pool certificates, Forms 15, 16 and 17</span><span>On file</span></li>
-      <li><span>Seller disclosure statement, Form 2</span><span>Signed</span></li>
-      <li class="pending"><span>Pool safety certificate, Form 23</span><span>To follow</span></li>
+      <li><span><span class="en">Final inspection certificate, Form 21</span><span class="zh">竣工验收证书（Form 21）</span></span><span>26 Aug 2026</span></li>
+      <li><span><span class="en">Building approval</span><span class="zh">建筑审批</span></span><span><span class="en">On file</span><span class="zh">已存档</span></span></li>
+      <li><span><span class="en">Plumbing final inspection</span><span class="zh">给排水竣工验收</span></span><span>24 Jun 2026</span></li>
+      <li><span><span class="en">Pool certificates, Forms 15, 16 and 17</span><span class="zh">泳池证书（Form 15、16、17）</span></span><span><span class="en">On file</span><span class="zh">已存档</span></span></li>
+      <li><span><span class="en">QBCC home warranty insurance, house</span><span class="zh">QBCC 住宅保修险（主体）</span></span><span><span class="en">Transfers to you</span><span class="zh">可转至新业主名下</span></span></li>
+      <li><span><span class="en">QBCC home warranty insurance, pool</span><span class="zh">QBCC 住宅保修险（泳池）</span></span><span><span class="en">Transfers to you</span><span class="zh">可转至新业主名下</span></span></li>
+      <li><span><span class="en">Seller disclosure statement, Form 2</span><span class="zh">卖方披露声明（Form 2）</span></span><span><span class="en">Signed</span><span class="zh">已签署</span></span></li>
     </ul>
   </div>
 </section>
@@ -435,19 +451,15 @@ dialog.lb::backdrop{background:#121418}
 <section class="sec" id="location" aria-labelledby="loc-h">
   <div class="wrap">
     <div class="loc-grid">
-      <figure>
-        <img style="background-image:url(data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JZQCsEf/gPHsg7Igp2d302wAA/sYGHfO8db3keoDQ00jBc3OR47VR57YOg32GB/1FWgtLswJqLCyUYS+rB9BAcqgoNAAA)" src="img/22-1600.webp" width="1600" height="1067" loading="lazy" alt="Aerial photo at sunset over Tarragindi toward the city">
-        <figcaption>Looking north over Tarragindi to the CBD</figcaption>
-      </figure>
       <div>
-        <h2 id="loc-h">Tarragindi</h2>
-        <p class="lede" style="margin-top:18px">A leafy, hilly suburb in Brisbane's inner south, where streets keep their trees and houses are held for a long time.</p>
-        <dl class="facts">
-          <dt>Brisbane CBD</dt><dd>About 8 km</dd>
-          <dt>Toohey Forest</dt><dd>On the suburb's southern edge</dd>
-          <dt>Schools</dt><dd>Ask Emily for the current catchments</dd>
+        <h2 id="loc-h"><span class="en">Tarragindi</span><span class="zh">塔拉金迪</span></h2>
+        <p style="margin-top:18px"><span class="en">A leafy, hilly suburb in Brisbane's inner south.</span><span class="zh">布里斯班南部近城区一个绿树成荫、地势起伏的住宅区。</span></p>
+        <dl class="dist">
+          <dt><span class="en">Brisbane CBD</span><span class="zh">布里斯班市中心</span></dt><dd><span class="en">About 8 km</span><span class="zh">约 8 公里</span></dd>
+          <dt><span class="en">Toohey Forest</span><span class="zh">Toohey Forest 森林公园</span></dt><dd><span class="en">On the suburb's southern edge</span><span class="zh">位于本区南侧</span></dd>
+          <dt><span class="en">Schools</span><span class="zh">学校</span></dt><dd><span class="en">Ask Emily for the current catchments</span><span class="zh">请向 Emily 咨询最新学区信息</span></dd>
         </dl>
-        <p style="margin-top:22px"><a class="link" href="https://maps.google.com/?q=24+Weal+Avenue,+Tarragindi+QLD+4121" rel="noopener" target="_blank">Open in Google Maps</a></p>
+        <p style="margin-top:22px;font:500 16px var(--sans)"><a href="https://maps.google.com/?q=24+Weal+Avenue,+Tarragindi+QLD+4121" rel="noopener" target="_blank"><span class="en">Open in Google Maps</span><span class="zh">在 Google 地图中打开</span></a></p>
       </div>
     </div>
   </div>
@@ -457,12 +469,12 @@ dialog.lb::backdrop{background:#121418}
   <div class="wrap">
     <div class="book-grid">
       <div>
-        <h2 id="book-h">Book a private inspection</h2>
-        <p class="lede" style="margin-top:18px">The house is being shown privately before it goes on the portals. Tell Emily when suits you and she'll text to confirm a time.</p>
-        <p>Private sale. Ask Emily for the price guide.</p>
+        <h2 id="book-h"><span class="en">Book a private inspection</span><span class="zh">预约私人看房</span></h2>
+        <p style="margin-top:18px"><span class="en">This house is off market and shown only to Emily's buyers. Tell her when suits you and she'll text to confirm a time.</span><span class="zh">本房产不公开上市，仅向 Emily 的买家展示。请告诉她您方便的时间，她会发短信与您确认。</span></p>
+        <p><span class="en">Private sale. Ask Emily for the price guide.</span><span class="zh">私人洽售，价格请向 Emily 咨询。</span></p>
         <div class="agent">
           <strong>Emily Xiong</strong>
-          <p style="margin:2px 0 0">LJ Hooker Property Partners</p>
+          <p style="margin:2px 0 0;font:400 15px var(--sans)">LJ Hooker Property Partners</p>
           <a href="tel:0401056588">0401 056 588</a><br>
           <a href="mailto:EmilyXiong@ljhpp.com.au?subject=24%20Weal%20Avenue%2C%20Tarragindi" style="font-size:16px">EmilyXiong@ljhpp.com.au</a>
         </div>
@@ -470,44 +482,44 @@ dialog.lb::backdrop{background:#121418}
       <div>
         <form id="enquiry" novalidate>
           <div class="field" id="f-name">
-            <label for="name">Your name</label>
+            <label for="name"><span class="en">Your name</span><span class="zh">您的姓名</span></label>
             <input type="text" id="name" name="name" autocomplete="name" required>
-            <p class="err">Add your name so Emily knows who to expect.</p>
+            <p class="err"><span class="en">Add your name so Emily knows who to expect.</span><span class="zh">请填写姓名，方便 Emily 安排。</span></p>
           </div>
           <div class="field" id="f-mobile">
-            <label for="mobile">Mobile</label>
+            <label for="mobile"><span class="en">Mobile</span><span class="zh">手机号码</span></label>
             <input type="tel" id="mobile" name="mobile" autocomplete="tel" inputmode="tel" required>
-            <p class="hint">So Emily can text you a time.</p>
-            <p class="err">Add a mobile number, like 0412 345 678.</p>
+            <p class="hint"><span class="en">So Emily can text you a time.</span><span class="zh">Emily 会通过短信告知看房时间。</span></p>
+            <p class="err"><span class="en">Add a mobile number, like 0412 345 678.</span><span class="zh">请填写手机号码，例如 0412 345 678。</span></p>
           </div>
           <div class="field">
-            <label for="email">Email <small>optional</small></label>
+            <label for="email"><span class="en">Email</span><span class="zh">电子邮箱</span> <small><span class="en">optional</span><span class="zh">选填</span></small></label>
             <input type="email" id="email" name="email" autocomplete="email">
           </div>
           <fieldset>
-            <legend class="legend">When suits you?</legend>
+            <legend class="legend"><span class="en">When suits you?</span><span class="zh">您方便的时间？</span></legend>
             <div class="chips">
-              <label><input type="radio" name="when" value="a weekday"><span>Weekday</span></label>
-              <label><input type="radio" name="when" value="a weekend"><span>Weekend</span></label>
-              <label><input type="radio" name="when" value="a weekday evening"><span>Evening</span></label>
+              <label><input type="radio" name="when" value="a weekday"><span><span class="en">Weekday</span><span class="zh">工作日</span></span></label>
+              <label><input type="radio" name="when" value="a weekend"><span><span class="en">Weekend</span><span class="zh">周末</span></span></label>
+              <label><input type="radio" name="when" value="a weekday evening"><span><span class="en">Evening</span><span class="zh">晚上</span></span></label>
             </div>
           </fieldset>
           <fieldset>
-            <legend class="legend">Is your finance approved? <small>optional</small></legend>
+            <legend class="legend"><span class="en">Is your finance approved?</span><span class="zh">贷款是否已获批？</span> <small><span class="en">optional</span><span class="zh">选填</span></small></legend>
             <div class="chips">
-              <label><input type="radio" name="finance" value="Yes"><span>Yes</span></label>
-              <label><input type="radio" name="finance" value="Not yet"><span>Not yet</span></label>
-              <label><input type="radio" name="finance" value="Prefer not to say"><span>Prefer not to say</span></label>
+              <label><input type="radio" name="finance" value="Yes"><span><span class="en">Yes</span><span class="zh">是</span></span></label>
+              <label><input type="radio" name="finance" value="Not yet"><span><span class="en">Not yet</span><span class="zh">尚未</span></span></label>
+              <label><input type="radio" name="finance" value="Cash buyer"><span><span class="en">Cash buyer</span><span class="zh">现金购买</span></span></label>
             </div>
           </fieldset>
           <div>
-            <button class="btn" type="submit">Book a private inspection</button>
-            <p class="hint">This opens your email app with the request to Emily filled in. Press send to book.</p>
+            <button class="btn" type="submit"><span class="en">Book a private inspection</span><span class="zh">预约私人看房</span></button>
+            <p class="hint"><span class="en">This opens your email app with the request to Emily filled in. Press send to book.</span><span class="zh">点击后将打开您的邮件应用，内容已自动填好，发送即可完成预约。</span></p>
           </div>
         </form>
         <div class="sent" id="sent" role="status" tabindex="-1">
-          <h3>Your request is ready to send</h3>
-          <p>Your email app should have opened with it filled in. Press send and Emily will text you to confirm a time. If nothing opened, call or text her on <a href="tel:0401056588">0401 056 588</a>.</p>
+          <h3><span class="en">Your request is ready to send</span><span class="zh">预约邮件已准备好</span></h3>
+          <p><span class="en">Press send in your email app and Emily will text you to confirm a time. If nothing opened, call or text her on <a href="tel:0401056588">0401 056 588</a>.</span><span class="zh">请在邮件应用中点击发送，Emily 会发短信与您确认时间。如果邮件应用没有打开，请直接致电或短信 <a href="tel:0401056588">0401 056 588</a>。</span></p>
         </div>
       </div>
     </div>
@@ -518,40 +530,49 @@ dialog.lb::backdrop{background:#121418}
 
 <footer>
   <div class="wrap">
-    <p>24 Weal Avenue, Tarragindi QLD 4121. Photos by NIRA Creative, July 2026; some rooms are furnished with styling that isn't included. Areas come from the builder's plans and are approximate. This information is given in good faith but isn't a contract or a warranty, so buyers should make their own enquiries.</p>
+    <p><span class="en">24 Weal Avenue, Tarragindi QLD 4121. Photos by NIRA Creative, July 2026; rooms are styled with furniture that isn't included. Areas are approximate. This information is given in good faith but isn't a contract or a warranty, so buyers should make their own enquiries.</span><span class="zh">24 Weal Avenue, Tarragindi QLD 4121。照片由 NIRA Creative 于 2026 年 7 月拍摄，家具为样板布置，不包含在出售范围内。面积为约数。以上信息仅供参考，不构成合同或保证，买家应自行核实。中文内容仅供参考，以英文版本为准。</span></p>
   </div>
 </footer>
 
-<div class="bar" aria-label="Contact Emily">
-  <a class="btn" href="sms:0401056588?&body=Hi%20Emily%2C%20I%27d%20like%20to%20book%20a%20private%20inspection%20of%2024%20Weal%20Ave%2C%20Tarragindi.%20My%20name%20is%20">Text Emily to book</a>
-  <a class="alt" href="tel:0401056588">Call</a>
+<div class="bar">
+  <a class="btn" id="sms" href="sms:0401056588?&body=Hi%20Emily%2C%20I%27d%20like%20to%20book%20a%20private%20inspection%20of%2024%20Weal%20Ave%2C%20Tarragindi.%20My%20name%20is%20"><span class="en">Text Emily to book</span><span class="zh">短信联系 Emily 预约</span></a>
+  <a class="alt" href="tel:0401056588"><span class="en">Call</span><span class="zh">致电</span></a>
 </div>
 
 <dialog class="lb" id="lb" aria-label="Photo viewer">
   <div class="lb-inner">
-    <button class="lb-btn lb-close" id="lb-close">Close</button>
+    <button class="lb-btn lb-close" id="lb-close"><span class="en">Close</span><span class="zh">关闭</span></button>
     <div class="lb-stage" id="lb-stage"><img id="lb-img" alt=""></div>
     <div class="lb-bar">
-      <button class="lb-btn" id="lb-prev" aria-label="Previous photo">Previous</button>
+      <button class="lb-btn" id="lb-prev" aria-label="Previous photo"><span class="en">Previous</span><span class="zh">上一张</span></button>
       <span class="lb-cap" id="lb-cap"></span>
       <span class="lb-count" id="lb-count"></span>
-      <button class="lb-btn" id="lb-next" aria-label="Next photo">Next</button>
+      <button class="lb-btn" id="lb-next" aria-label="Next photo"><span class="en">Next</span><span class="zh">下一张</span></button>
     </div>
   </div>
 </dialog>
 
 <script>
 (function(){
-  var items=[].map.call(document.querySelectorAll('#gallery figure'),function(f){
-    var img=f.querySelector('img');var src=img.getAttribute('src').replace('-800.webp','-1600.webp');
-    return {src:src,alt:img.alt,cap:f.querySelector('figcaption').textContent};
-  });
-  var plans=[{src:'img/plan-ground-2800.webp?v=2',alt:'Ground floor plan',cap:'Ground floor, 116.26 m²'},{src:'img/plan-first-2800.webp?v=2',alt:'First floor plan',cap:'First floor, 149.37 m²'}];
+  var root=document.documentElement;
+  var smsBody={en:"Hi Emily, I'd like to book a private inspection of 24 Weal Ave, Tarragindi. My name is ",zh:"您好 Emily，我想预约私人看房：24 Weal Ave, Tarragindi。我的名字是："};
+  function setLang(l){
+    root.dataset.lang=l;root.lang=l==='zh'?'zh-Hans':'en-AU';
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l);});
+    document.getElementById('sms').href='sms:0401056588?&body='+encodeURIComponent(smsBody[l]);
+    try{localStorage.setItem('weal-lang',l);}catch(e){}
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set);});});
+  setLang(root.dataset.lang);
+
+  var keys=['29','27','13','12','22','26','30v1','16v1','14','03','20','02','28','23','05','01','04','18','11','17','08','06','19','10','07'],caps=[['The skyline at sunset, from the house','从家中看到的日落城市天际线'],['Master suite at dusk, with the balcony beyond','黄昏时的主卧套房，门外即是阳台'],['Master suite by day, doors open to the balcony','白天的主卧套房，推拉门通往阳台'],['Ensuite vanity, with the city through the bedroom','主卧浴室双台盆，透过卧室可见城市景观'],['Tarragindi at sunset, the CBD on the horizon','日落时分的塔拉金迪，远处即是市中心'],['Pool, lawn and alfresco at dusk','黄昏时的泳池、草坪与户外休闲区'],['Arched garden gate','拱形花园门'],['Front gates closed','临街大门关闭时'],['Covered alfresco and lawn','有盖户外休闲区与草坪'],['Alfresco dining beside the pool','泳池旁的户外用餐区'],['Kitchen, dining and living, one room','厨房、餐厅与客厅一体相连'],['Walnut kitchen, stone island','胡桃木橱柜与石材岛台'],['The kitchen at night','夜晚的厨房'],['Full-height joinery','通顶定制柜'],['Dining and living','餐厅与客厅'],['Living, open to the alfresco','客厅直通户外休闲区'],['Dining beside the glass doors','玻璃门旁的餐厅'],['Master suite','主卧套房'],['Ensuite, twin basins and a freestanding bath','主卧浴室：双台盆与独立浴缸'],['Upstairs living','二楼起居室'],['Bedroom with walk-in robe','带步入式衣帽间的卧室'],['Bedroom with a treetop outlook','可望见树梢的卧室'],['Bedroom with two big windows','两扇大窗、采光充足的卧室'],['Bedroom with a timber bedhead','木质床头的卧室'],['Bathroom','浴室']];
+  var items=keys.map(function(k,i){return {src:'img/'+k+'-2400.webp',cap:caps[i]};});
+  var plans=[{src:'img/plan-ground-2800.webp?v=3',cap:['Ground floor, 116.26 m²','一楼，116.26 平方米']},{src:'img/plan-first-2800.webp?v=3',cap:['First floor, 149.37 m²','二楼，149.37 平方米']}];
   var lb=document.getElementById('lb'),im=document.getElementById('lb-img'),cap=document.getElementById('lb-cap'),cnt=document.getElementById('lb-count');
   var set=items,i=0,opener=null;
-  function show(n){i=(n+set.length)%set.length;im.src=set[i].src;im.alt=set[i].alt;cap.textContent=set[i].cap;cnt.textContent=(i+1)+' of '+set.length;}
-  function open(list,n,btn){set=list;opener=btn;show(n);if(lb.showModal)lb.showModal();else lb.setAttribute('open','');}
-  document.querySelectorAll('#gallery button').forEach(function(b){b.addEventListener('click',function(){open(items,+b.dataset.i,b);});});
+  function show(n){i=(n+set.length)%set.length;im.src=set[i].src;var c=set[i].cap[root.dataset.lang==='zh'?1:0];im.alt=c;cap.textContent=c;cnt.textContent=(i+1)+' / '+set.length;}
+  function open(list,n,btn){set=list;opener=btn;lb.classList.toggle('plan',list===plans);show(n);if(lb.showModal)lb.showModal();else lb.setAttribute('open','');}
+  document.querySelectorAll('.ph button').forEach(function(b){b.addEventListener('click',function(){open(items,+b.dataset.i,b);});});
   document.querySelectorAll('[data-plan]').forEach(function(b){b.addEventListener('click',function(){open(plans,+b.dataset.plan,b);});});
   document.getElementById('lb-prev').onclick=function(){show(i-1);};
   document.getElementById('lb-next').onclick=function(){show(i+1);};
@@ -562,21 +583,21 @@ dialog.lb::backdrop{background:#121418}
   st.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
   st.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)show(i+(dx<0?1:-1));x0=null;});
 
-  var film=document.getElementById('film');
-  film.src=matchMedia('(max-width:760px)').matches?film.dataset.tall:film.dataset.wide;
-  if(matchMedia('(max-width:760px)').matches)film.poster='img/25v1-portrait-1200.webp';
+  var film=document.getElementById('film'),narrow=matchMedia('(max-width:760px)').matches;
+  film.src=narrow?film.dataset.tall:film.dataset.wide;
+  if(narrow)film.poster='img/25v1-portrait-1200.webp';
 
   var form=document.getElementById('enquiry');
   form.addEventListener('submit',function(e){
     e.preventDefault();
     var name=form.name.value.trim(),mob=form.mobile.value.trim(),ok=true;
     document.getElementById('f-name').classList.toggle('invalid',!name);
-    var digits=mob.replace(/\D/g,'');var mobOk=digits.length>=8;
+    var mobOk=mob.replace(/\D/g,'').length>=8;
     document.getElementById('f-mobile').classList.toggle('invalid',!mobOk);
     if(!name){form.name.focus();ok=false;}else if(!mobOk){form.mobile.focus();ok=false;}
     if(!ok)return;
     var when=(form.querySelector('[name=when]:checked')||{}).value,fin=(form.querySelector('[name=finance]:checked')||{}).value;
-    var body='Hi Emily,\n\nI\'d like to book a private inspection of 24 Weal Avenue, Tarragindi.\n\nName: '+name+'\nMobile: '+mob+(form.email.value.trim()?'\nEmail: '+form.email.value.trim():'')+(when?'\nBest time: '+when:'')+(fin?'\nFinance approved: '+fin:'')+'\n\nThanks';
+    var body='Hi Emily,\n\nI\'d like to book a private inspection of 24 Weal Avenue, Tarragindi.\n\nName: '+name+'\nMobile: '+mob+(form.email.value.trim()?'\nEmail: '+form.email.value.trim():'')+(when?'\nBest time: '+when:'')+(fin?'\nFinance: '+fin:'')+(root.dataset.lang==='zh'?'\nPreferred language: Chinese':'')+'\n\nThanks';
     location.href='mailto:EmilyXiong@ljhpp.com.au?subject='+encodeURIComponent('Private inspection, 24 Weal Avenue')+'&body='+encodeURIComponent(body);
     form.style.display='none';var s=document.getElementById('sent');s.style.display='block';s.focus();
   });
